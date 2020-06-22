@@ -1,0 +1,6 @@
+/node_modules/
+/public/bundle.js
+/public/global.css
+
+.vscode
+.DS_Store
