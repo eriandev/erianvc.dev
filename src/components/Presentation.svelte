@@ -6,7 +6,7 @@
     <div class="container">
         <h1>
             <span class="name">Erick Vargas</span>
-            <span class="lg:block">Estudiante de Ingeniería en Sistemas</span>
+            <span class="subtitle">Centrado en mejorar el rendimiento y <br> la experiencia de usuario en tus aplicaciones web</span>
         </h1>
         <Button green scrollTo=".about-me" style="my-8 text-2xl lg:text-3xl">
             Más acerca de mí
@@ -29,18 +29,30 @@
     }
 
     h1 {
-        @apply text-4xl font-bold font-dosis leading-tight;
+        @apply text-5xl font-bold font-dosis leading-tight;
+    }
+
+    .subtitle {
+        @apply block text-2xl;
     }
 
     @screen xs {
         h1 {
             @apply text-5xl;
         }
+
+        .subtitle {
+            @apply text-3xl;
+        }
     }
 
     @screen lg {
         .presentation {
             @apply pl-24 text-left;
+        }
+
+        .subtitle {
+            @apply text-4xl;
         }
 
         h1 {

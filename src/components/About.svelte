@@ -52,7 +52,7 @@
     .about-me {
         @apply text-white pt-16 pb-20;
         background: #02AAB0;
-        background: linear-gradient(to bottom,#02AAB0,#00CDAC);
+        background: linear-gradient(to top,#02AAB0,#00CDAC);
     }
 
     h3 {
@@ -102,7 +102,7 @@
         .about-me {
             @apply pt-24 pb-32;
             background: #02AAB0; 
-            background: linear-gradient(to right,#02AAB0,#00CDAC);
+            background: linear-gradient(to left,#02AAB0,#00CDAC);
         }
 
         h3 {
