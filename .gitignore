@@ -1,6 +1,12 @@
 /node_modules/
-/public/bundle.js
-/public/global.css
 
-.vscode
-.DS_Store
+/__sapper__/
+/src/node_modules/@sapper/
+/cypress/screenshots/
+/static/global.css
+
+.env
+.env.test
+
+/.vscode/
+*.code-workspace
