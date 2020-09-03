@@ -29,7 +29,7 @@
     }
 
     h1 {
-        @apply ml-2 font-bold text-9xl;
+        @apply ml-2 text-5xl font-bold;
     }
 
     p {

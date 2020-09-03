@@ -33,6 +33,10 @@ module.exports = {
             '12': '3rem',
             '14': '3.5rem',
             '16': '4rem',
+            '20': '5rem',
+            '24': '6rem',
+            '32': '8rem',
+            '40': '10rem',
             auto: 'auto',
         },
         fontFamily: {
@@ -76,6 +80,7 @@ module.exports = {
 
             black: '#1A202C',
             white: '#FFFFFF',
+            transparent: 'transparent',
         },
         borderRadius: {
             default: '0.5rem',

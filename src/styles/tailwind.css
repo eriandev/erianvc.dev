@@ -37,3 +37,17 @@ body::-webkit-scrollbar-thumb {
 ::-moz-selection {
     @apply text-white bg-prime;
 }
+
+
+
+.title {
+    @apply text-3xl font-bold text-center text-white font-dosis leading-title md:text-4xl;
+}
+
+.subtitle {
+    @apply tracking-widest text-center text-white font-dosis leading-title md:text-2xl;
+}
+
+.prime {
+    @apply text-4xl md:text-5xl;
+}

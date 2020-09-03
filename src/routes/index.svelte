@@ -1,7 +1,5 @@
 <script>
-    import Hello from '@components/Hello.svelte'
+    import Hero from '@segments/Hero.svelte'
 </script>
 
-<main>
-    <Hello />
-</main>
+<Hero />
