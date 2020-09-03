@@ -76,6 +76,7 @@ module.exports = {
 
             black: '#1A202C',
             white: '#FFFFFF',
+            transparent: 'transparent',
         },
         borderRadius: {
             default: '0.5rem',
