@@ -1,26 +1,11 @@
 <script>
     import Button from '@components/Button.svelte'
     import Text from '@components/Text.svelte'
+    import Icon from '@components/Icon.svelte'
 </script>
 
-<section class="flex flex-col space-y-4">
-    <div>
-        <Button featured fill>
-            Button Prime fill
-        </Button>
-        <Button fill>
-            Button Fill
-        </Button>
-    </div>
-
-    <div>
-        <Button featured outline>
-            Button Prime outline
-        </Button>
-        <Button outline>
-            Button outline
-        </Button>
-    </div>
+<section class="container flex justify-center">
+    <Icon center name="logo" class="h-40"/>
 </section>
 
 <section class="container flex flex-wrap justify-center">
@@ -47,4 +32,24 @@
         Hic tempora eveniet voluptatibus inventore placeat optio quae impedit sed adipisci repellat?
         Enim perspiciatis amet praesentium minus.
     </Text>
+</section>
+
+<section class="flex flex-col space-y-4">
+    <div>
+        <Button featured fill>
+            Button Prime fill
+        </Button>
+        <Button fill>
+            Button Fill
+        </Button>
+    </div>
+
+    <div>
+        <Button featured outline>
+            Button Prime outline
+        </Button>
+        <Button outline>
+            Button outline
+        </Button>
+    </div>
 </section>
