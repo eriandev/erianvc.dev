@@ -1,11 +1,39 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import url(https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500&display=swap);
 
 :root {
     font-size: 16px;
+    --color-prime: hsl(182, 98%, 35%);
+    --color-primary: hsl(182, 98%, 40%);
+    --color-secondary: hsl(170, 100%, 40%);
 }
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-    @apply text-gray-800;
+    @apply text-gray-100 bg-odd;
+}
+
+body::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.3);
+    -webkit-box-shadow: inset 0 0 8px rgba(0,0,0,0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--color-prime);
+    outline: 1px solid #2D3748;
+}
+
+::selection {
+    @apply text-white bg-prime;
+}
+
+::-moz-selection {
+    @apply text-white bg-prime;
 }
