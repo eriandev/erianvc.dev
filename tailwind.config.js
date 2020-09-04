@@ -25,8 +25,10 @@ module.exports = {
         },
         spacing: {
             '0': '0',
+            '1px': '1px',
             '1': '0.25rem',
             '2': '0.5rem',
+            '3': '0.75rem',
             '4': '1rem',
             '6': '1.5rem',
             '8': '2rem',
@@ -85,6 +87,15 @@ module.exports = {
         borderRadius: {
             default: '0.5rem',
         },
+        extend: {
+            maxWidth: {
+                '300': '300px',
+            },
+            maxHeight: {
+                none: 'none',
+                '180': '180px',
+            }
+        }
     },
     variants: {},
     plugins: [],
