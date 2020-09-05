@@ -14,13 +14,14 @@ module.exports = {
             md: '768px',
             lg: '1280px',
             xl: '1440px',
+            '2xl': '1920px',
         },
         container: {
             center: true,
             padding: {
                 default: '1rem',
                 md: '4rem',
-                xl: '3rem',            
+                xl: '8rem',            
         },
         },
         spacing: {
@@ -90,10 +91,12 @@ module.exports = {
         extend: {
             maxWidth: {
                 '300': '300px',
+                '380': '380px',
             },
             maxHeight: {
                 none: 'none',
                 '180': '180px',
+                '220': '220px',
             }
         }
     },

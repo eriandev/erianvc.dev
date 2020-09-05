@@ -48,6 +48,10 @@ body::-webkit-scrollbar-thumb {
     @apply tracking-widest text-center text-white font-dosis leading-title md:text-2xl;
 }
 
+.emphasis {
+    @apply font-medium text-white md:text-xl leading-body font-fira;
+}
+
 .prime {
     @apply text-4xl md:text-5xl;
 }
