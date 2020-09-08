@@ -3,7 +3,7 @@
     import Projects from '@segments/Projects.svelte'
     import Posts from '@segments/Posts.svelte'
     import About from '@segments/About.svelte'
-    import Slider from '@components/Slider.svelte'
+    import Contact from '@segments/Contact.svelte'
 </script>
 
 <Hero />
@@ -14,6 +14,4 @@
 
 <About />
 
-<div class="h-screen">
-    <Slider />
-</div>
+<Contact />
