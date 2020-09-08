@@ -5,24 +5,20 @@ module.exports = {
         applyComplexClasses: true,
     },
     future: {
+        purgeLayersByDefault: true,
         removeDeprecatedGapUtilities: true,
+    },
+    corePlugins: {
+        container: false,
     },
     purge: ['./src/**/*.svelte', './src/**/*.html'],
     theme: {
         screens: {
-            sm: '640px',
+            sm: '600px',
             md: '768px',
             lg: '1280px',
             xl: '1440px',
             '2xl': '1900px',
-        },
-        container: {
-            center: true,
-            padding: {
-                default: '1rem',
-                md: '4rem',
-                xl: '8rem',            
-        },
         },
         spacing: {
             '0': '0',

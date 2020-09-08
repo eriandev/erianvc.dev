@@ -10,6 +10,7 @@ module.exports = {
         !dev &&
             require('@fullhuman/postcss-purgecss')({
                 content: ['./src/**/*.svelte', './src/**/*.html'],
+                whitelist: ['container'],
                 defaultExtractor: (content) =>
                     [...content.matchAll(/(?:class:)*([\w\d-/:%.]+)/gm)].map(
                         ([_match, group, ..._rest]) => group
