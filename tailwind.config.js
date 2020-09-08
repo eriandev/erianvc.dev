@@ -87,7 +87,9 @@ module.exports = {
         },
         borderRadius: {
             default: '0.5rem',
-            full: '9999px',
+            lg: '1rem',
+            xl: '2rem',
+            full: '50%',
         },
         extend: {
             maxWidth: {
