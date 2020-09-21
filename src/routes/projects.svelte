@@ -1,6 +1,6 @@
 <script>
     import Text from '@components/Text.svelte'
-    import Button from '@components/Button.svelte'
+    import Link from '@components/Link.svelte'
     import SliderGrid from '@components/SliderGrid.svelte'
 
     const data = [
@@ -44,9 +44,9 @@
             <h4 class="emphasis">Watch the cool stuff I have built</h4>
 
             <div>
-                <Button outline>
+                <Link external to="https://github.com/erianvc" btn outline>
                     View more projects
-                </Button>
+                </Link>
             </div>
         </article>
 
@@ -56,7 +56,7 @@
 
 <style>
     section {
-        @apply min-h-screen text-center bg-even;
+        @apply min-h-screen text-center;
     }
 
     .content {

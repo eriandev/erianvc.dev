@@ -3,7 +3,6 @@
     import Image from '@components/Image.svelte'
     import Icon from '@components/Icon.svelte'
     import Link from '@components/Link.svelte'
-    import Button from '@components/Button.svelte'
 </script>
 
 <section id="about">
@@ -11,7 +10,7 @@
 
     <article class="look-at-me">
         <div class="img-container">
-            <Image circle class="w-24 h-24 border-4 md:w-40 md:h-40 border-prime" src="/images/photo.png" title="Erick photo" />
+            <Image circle class="w-24 h-24 border-4 md:w-40 md:h-40 border-prime" src="images/photo.png" title="Erick photo" />
         </div>
 
         <div class="socials">
@@ -56,15 +55,15 @@
     </article>
 
     <div class="w-full">
-        <Button fill scrollTo="#contact">
+        <Link to="contact" btn featured fill>
             Let's work together
-        </Button>
+        </Link>
     </div>
 </section>
 
 <style>
     section {
-        @apply flex flex-wrap content-center justify-center min-h-screen text-center bg-even;
+        @apply flex flex-wrap content-center justify-center min-h-screen text-center;
     }
 
     h3 {

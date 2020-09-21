@@ -1,9 +1,11 @@
 <script>
     import Navbar from '@components/Navbar.svelte'
+
+    export let segment
 </script>
 
 <main>
     <slot />
 </main>
 
-<Navbar />
+<Navbar {segment} />

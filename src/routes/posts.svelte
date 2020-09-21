@@ -1,6 +1,6 @@
 <script>
     import Text from '@components/Text.svelte'
-    import Button from '@components/Button.svelte'
+    import Link from '@components/Link.svelte'
     import SliderGrid from '@components/SliderGrid.svelte'
 
     const data = [
@@ -43,9 +43,9 @@
         <h4 class="emphasis">Cool articles to read</h4>
 
         <div>
-            <Button outline>
+            <Link external to="https://dev.to/erianvc" btn outline>
                 View more posts
-            </Button>
+            </Link>
         </div>
     </article>
 
@@ -54,7 +54,7 @@
 
 <style>
     section {
-        @apply flex flex-wrap content-center justify-center min-h-screen text-center bg-odd xl:flex-row-reverse xl:max-w-screen-xl xl:mx-auto;
+        @apply flex flex-wrap content-center justify-center min-h-screen text-center xl:flex-row-reverse xl:max-w-screen-xl xl:mx-auto;
     }
 
     article {

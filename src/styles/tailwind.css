@@ -13,7 +13,7 @@
 @tailwind utilities;
 
 body {
-    @apply relative text-gray-100 bg-odd;
+    @apply relative text-gray-100 bg-even;
     -webkit-tap-highlight-color: transparent;
 }
 
