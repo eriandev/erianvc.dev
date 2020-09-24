@@ -54,7 +54,7 @@
         </Text>
     </article>
 
-    <div class="w-full">
+    <div class="action-button">
         <Link to="contact" btn featured fill>
             Let's work together
         </Link>
@@ -63,7 +63,7 @@
 
 <style>
     section {
-        @apply flex flex-wrap content-center justify-center min-h-screen text-center;
+        @apply flex flex-wrap justify-center pt-8 text-center sm:min-h-screen sm:pt-0 sm:content-center md:pt-24;
     }
 
     h3 {
@@ -92,5 +92,9 @@
 
     li {
         @apply inline mr-4;
+    }
+
+    .action-button {
+        @apply hidden w-full mb-32 sm:inline-block;
     }
 </style>

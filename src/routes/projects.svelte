@@ -43,7 +43,7 @@
 
             <h4 class="emphasis">Watch the cool stuff I have built</h4>
 
-            <div>
+            <div class="btn-desktop">
                 <Link external to="https://github.com/erianvc" btn outline>
                     View more projects
                 </Link>
@@ -51,6 +51,12 @@
         </article>
 
         <SliderGrid projects {data} />
+
+        <div class="btn-mobile">
+            <Link external to="https://github.com/erianvc" btn outline>
+                View more projects
+            </Link>
+        </div>
     </div>
 </section>
 
@@ -60,7 +66,7 @@
     }
 
     .content {
-        @apply flex flex-wrap content-center justify-center h-full min-h-screen xl:max-w-screen-xl xl:mx-auto;
+        @apply flex flex-wrap justify-center pt-8 sm:content-center sm:min-h-screen sm:pt-0 md:pt-24 xl:max-w-screen-xl xl:mx-auto;
     }
 
     article {
@@ -75,7 +81,11 @@
         @apply mb-12 xl:text-right;
     }
 
-    div {
+    .btn-mobile {
+        @apply hidden mb-32 md:block md:flex md:justify-center mt-14 xl:hidden;
+    }
+
+    .btn-desktop {
         @apply hidden xl:flex xl:justify-end xl:block;
     }
 </style>

@@ -19,8 +19,6 @@ body {
 
 main {
     @apply relative w-full h-screen overflow-auto;
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
 }
 
 main::-webkit-scrollbar {
@@ -35,10 +33,6 @@ main::-webkit-scrollbar-track {
 main::-webkit-scrollbar-thumb {
     background-color: var(--color-prime);
     outline: 1px solid #2D3748;
-}
-
-section {
-    scroll-snap-align: start;
 }
 
 ::selection {

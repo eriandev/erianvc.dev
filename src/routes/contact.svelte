@@ -49,7 +49,7 @@
 
 <style>
     section {
-        @apply grid min-h-screen text-center place-items-center;
+        @apply flex flex-wrap justify-center pt-8 text-center sm:content-center sm:min-h-screen;
     }
 
     h3 {
