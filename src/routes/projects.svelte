@@ -1,30 +1,14 @@
 <script>
+    import { onMount } from 'svelte'
+    import getDataOf from 'utils/dataOf'
+    import { GITHUB } from 'utils/socials'
     import Text from '@components/Text.svelte'
     import Link from '@components/Link.svelte'
     import SliderGrid from '@components/SliderGrid.svelte'
 
-    const data = [
-        {
-            title: 'COVID Perú',
-            repo: 'https://github.com/erianvc/covid-peru',
-            preview: 'https://erianvc.dev/assets/images/covid-peru-preview.png'
-        },
-        {
-            title: 'Weather App',
-            repo: 'https://github.com/erianvc/weather-app',
-            preview: 'https://erianvc.dev/assets/images/weather-app-preview.png'
-        },
-        {
-            title: 'Fylo Landing Page',
-            repo: 'https://github.com/erianvc/fylo-landing-page',
-            preview: 'https://erianvc.dev/assets/images/fylo-landing-page-preview.png'
-        },
-        {
-            title: 'Huddle Landing Page',
-            repo: 'https://github.com/erianvc/huddle-landing-page',
-            preview: 'https://erianvc.dev/assets/images/huddle-landing-page-preview.png'
-        },
-    ]
+    let data
+
+    onMount( async () => data = await getDataOf('projects'))
 </script>
 
 <section id="projects">
@@ -44,16 +28,16 @@
             <h4 class="emphasis">Watch the cool stuff I have built</h4>
 
             <div class="btn-desktop">
-                <Link external to="https://github.com/erianvc" btn outline>
+                <Link external to={GITHUB} btn outline>
                     View more projects
                 </Link>
             </div>
         </article>
 
-        <SliderGrid projects {data} />
+        <SliderGrid for="projects" {data} />
 
         <div class="btn-mobile">
-            <Link external to="https://github.com/erianvc" btn outline>
+            <Link external to={GITHUB} btn outline>
                 View more projects
             </Link>
         </div>
