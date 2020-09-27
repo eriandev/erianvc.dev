@@ -66,7 +66,7 @@
     }
 
     .btn-mobile {
-        @apply hidden mb-32 md:block md:flex md:justify-center mt-14 xl:hidden;
+        @apply hidden mb-16 md:block md:flex md:justify-center mt-14 xl:hidden;
     }
 
     .btn-desktop {

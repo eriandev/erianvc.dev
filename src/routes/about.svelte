@@ -96,6 +96,6 @@
     }
 
     .action-button {
-        @apply hidden w-full mb-32 sm:inline-block;
+        @apply hidden w-full mb-16 sm:inline-block;
     }
 </style>
