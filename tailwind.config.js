@@ -51,6 +51,11 @@ module.exports = {
             '3xl': '2rem',
             '4xl': '2.5rem',
             '5xl': '3.5rem',
+            '6xl': '4rem',
+            '7xl': '6rem',
+            '8xl': '8rem',
+            '9xl': '9rem',
+            hero: '16rem',
         },
         fontWeight: {
             light: 300,
