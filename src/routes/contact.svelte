@@ -43,7 +43,7 @@
             <h4 class="emphasis">{clickTap} on my logo to know how to contact me</h4>
         {/if}
 
-        <Slider class="mt-12" bind:selected />
+        <Slider class="mt-12 mb-16" bind:selected />
     </div>
 </section>
 

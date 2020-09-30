@@ -1,30 +1,14 @@
 <script>
+    import { onMount } from 'svelte'
+    import getDataOf from 'utils/dataOf'
+    import { DEVTO } from 'utils/socials'
     import Text from '@components/Text.svelte'
     import Link from '@components/Link.svelte'
     import SliderGrid from '@components/SliderGrid.svelte'
 
-    const data = [
-        {
-            title: 'COVID Perú',
-            repo: 'https://github.com/erianvc/covid-peru',
-            preview: 'https://erianvc.dev/assets/images/covid-peru-preview.png'
-        },
-        {
-            title: 'Weather App',
-            repo: 'https://github.com/erianvc/weather-app',
-            preview: 'https://erianvc.dev/assets/images/weather-app-preview.png'
-        },
-        {
-            title: 'Fylo Landing Page',
-            repo: 'https://github.com/erianvc/fylo-landing-page',
-            preview: 'https://erianvc.dev/assets/images/fylo-landing-page-preview.png'
-        },
-        {
-            title: 'Huddle Landing Page',
-            repo: 'https://github.com/erianvc/huddle-landing-page',
-            preview: 'https://erianvc.dev/assets/images/huddle-landing-page-preview.png'
-        },
-    ]
+    let data
+
+    onMount( async () => data = await getDataOf('posts'))
 </script>
 
 <section id="posts">
@@ -44,16 +28,16 @@
             <h4 class="emphasis">Cool articles to read</h4>
 
             <div class="btn-desktop">
-                <Link external to="https://github.com/erianvc" btn outline>
+                <Link external to={DEVTO} btn outline>
                     View more posts
                 </Link>
             </div>
         </article>
 
-        <SliderGrid posts {data} />
+        <SliderGrid for="posts" {data} />
 
         <div class="btn-mobile">
-            <Link external to="https://dev.to/erianvc" btn outline>
+            <Link external to={DEVTO} btn outline>
                 View more posts
             </Link>
         </div>
@@ -82,7 +66,7 @@
     }
 
     .btn-mobile {
-        @apply hidden mb-32 md:block md:flex md:justify-center mt-14 xl:hidden;
+        @apply hidden mb-16 md:block md:flex md:justify-center mt-14 xl:hidden;
     }
 
     .btn-desktop {

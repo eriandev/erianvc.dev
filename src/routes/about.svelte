@@ -3,6 +3,7 @@
     import Image from '@components/Image.svelte'
     import Icon from '@components/Icon.svelte'
     import Link from '@components/Link.svelte'
+    import { LINKEDIN, GITHUB, TWITTER } from 'utils/socials'
 </script>
 
 <section id="about">
@@ -22,17 +23,17 @@
 
             <ul class="w-full">
                 <li>
-                    <Link external to="https://www.linkedin.com/in/erianvc">
+                    <Link external to={LINKEDIN}>
                         <Icon class="w-6 h-6 text-gray-700 fill-current" name="linkedin" />
                     </Link>
                 </li>
                 <li>
-                    <Link external to="https://github.com/erianvc">
+                    <Link external to={GITHUB}>
                         <Icon class="w-6 h-6 text-gray-700 fill-current" name="github" />
                     </Link>
                 </li>
                 <li>
-                    <Link external to="https://twitter.com/erianvc">
+                    <Link external to={TWITTER}>
                         <Icon class="w-6 h-6 text-gray-700 fill-current" name="twitter" />
                     </Link>
                 </li>
@@ -95,6 +96,6 @@
     }
 
     .action-button {
-        @apply hidden w-full mb-32 sm:inline-block;
+        @apply hidden w-full mb-16 sm:inline-block;
     }
 </style>
