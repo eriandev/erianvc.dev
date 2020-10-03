@@ -1,37 +1,17 @@
 <script>
-    import Icon from '@components/Icon.svelte'
-    import Text from '@components/Text.svelte'
-    import Link from '@components/Link.svelte'
+    import Hero from '@segments/Hero.svelte'
+    import Projects from '@segments/Projects.svelte'
+    import Posts from '@segments/Posts.svelte'
+    import About from '@segments/About.svelte'
+    import Contact from '@segments/Contact.svelte'
 </script>
 
-<section id="hero">
-    <div class="container">
-        <Icon class="h-40 mb-4" name="logo" center/>
+<Hero />
 
-        <h1 class="title prime">Erick Vargas</h1>
-        <h2 class="subtitle">Frontend Developer</h2>
+<Projects />
 
-        <Text class="mb-4 sm:px-8 md:mb-8 2xl:px-16">
-            Focused on improving performance and the user experience in your web applications.
-        </Text>
+<Posts />
 
-        <Link to="projects" btn featured fill>
-            See my projects
-        </Link>
-    </div>
-</section>
+<About />
 
-<style>
-    section {
-        @apply grid min-h-screen text-center bg-center bg-no-repeat bg-cover place-items-center;
-        background-image: url('/images/bg-hero.png');
-    }
-
-    h1 {
-        @apply mb-2;
-    }
-
-    h2 {
-        @apply mb-4 md:mb-8;
-    }
-</style>
+<Contact />
