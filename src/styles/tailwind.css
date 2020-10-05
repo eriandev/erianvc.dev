@@ -36,9 +36,9 @@ body::-webkit-scrollbar-thumb {
     @apply text-white bg-prime;
 }
 
-main {
+/* main {
     @apply relative w-full h-screen overflow-auto;
-}
+} */
 
 
 
