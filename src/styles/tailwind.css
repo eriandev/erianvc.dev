@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
     font-size: 16px;
     --color-prime: hsl(182, 98%, 35%);
@@ -5,29 +9,21 @@
     --color-secondary: hsl(170, 100%, 40%);
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 body {
     @apply relative text-gray-100 bg-even;
     -webkit-tap-highlight-color: transparent;
 }
 
-main {
-    @apply relative w-full h-screen overflow-auto;
-}
-
-main::-webkit-scrollbar {
+body::-webkit-scrollbar {
     width: 0.5rem;
 }
 
-main::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track {
     box-shadow: inset 0 0 8px rgba(0,0,0,0.3);
     -webkit-box-shadow: inset 0 0 8px rgba(0,0,0,0.3);
 }
 
-main::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
     background-color: var(--color-prime);
     outline: 1px solid #2D3748;
 }
@@ -60,4 +56,32 @@ main::-webkit-scrollbar-thumb {
 
 .prime {
     @apply text-4xl md:text-5xl;
+}
+
+
+
+.btn {
+    @apply inline-block px-4 py-4 text-lg font-bold border rounded cursor-pointer select-none focus:outline-none border-prime;
+    transition: all 500ms ease-out;
+}
+
+.btn:active {
+    @apply transform scale-95;
+    transition: all 200ms ease-in-out;
+}
+
+.outline {
+    @apply bg-transparent border text-secondary hover:text-white hover:bg-prime;
+}
+
+.fill {
+    @apply text-white bg-prime hover:bg-primary;
+}
+
+.small {
+    @apply px-2 py-2;
+}
+
+.featured {
+    @apply md:px-6 md:py-6; 
 }
