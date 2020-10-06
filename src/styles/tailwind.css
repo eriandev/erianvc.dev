@@ -1,13 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
     font-size: 16px;
     --color-prime: hsl(182, 98%, 35%);
     --color-primary: hsl(182, 98%, 40%);
     --color-secondary: hsl(170, 100%, 40%);
 }
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 body {
     @apply relative text-gray-100 bg-even;
@@ -36,10 +36,6 @@ body::-webkit-scrollbar-thumb {
     @apply text-white bg-prime;
 }
 
-/* main {
-    @apply relative w-full h-screen overflow-auto;
-} */
-
 
 
 .container {
@@ -60,4 +56,32 @@ body::-webkit-scrollbar-thumb {
 
 .prime {
     @apply text-4xl md:text-5xl;
+}
+
+
+
+.btn {
+    @apply inline-block px-4 py-4 text-lg font-bold border rounded cursor-pointer select-none focus:outline-none border-prime;
+    transition: all 500ms ease-out;
+}
+
+.btn:active {
+    @apply transform scale-95;
+    transition: all 200ms ease-in-out;
+}
+
+.outline {
+    @apply bg-transparent border text-secondary hover:text-white hover:bg-prime;
+}
+
+.fill {
+    @apply text-white bg-prime hover:bg-primary;
+}
+
+.small {
+    @apply px-2 py-2;
+}
+
+.featured {
+    @apply md:px-6 md:py-6; 
 }
