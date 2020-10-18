@@ -6,7 +6,9 @@ import babel from '@rollup/plugin-babel'
 import { terser } from 'rollup-plugin-terser'
 import config from 'sapper/config/rollup.js'
 import sveltePreprocess from 'svelte-preprocess'
+import alias from '@rollup/plugin-alias'
 import pkg from './package.json'
+import path from 'path'
 
 const mode = process.env.NODE_ENV
 const dev = mode === 'development'
@@ -18,6 +20,11 @@ const onwarn = (warning, onwarn) =>
     onwarn(warning)
 
 const preprocess = sveltePreprocess({ postcss: true })
+
+const projectRootDir = path.resolve(__dirname)
+const customResolver = resolve({
+    extensions: ['.mjs', '.js', '.json', '.svelte']
+})
 
 export default {
     client: {
@@ -32,6 +39,19 @@ export default {
                 preprocess,
                 dev,
                 hydratable: true
+            }),
+            alias({
+                entries: [
+                    {
+                        find: '@components',
+                        replacement: path.resolve(projectRootDir, 'src/components')
+                    },
+                    {
+                        find: 'utils',
+                        replacement: path.resolve(projectRootDir, 'src/utils')
+                    }
+                ],
+                customResolver
             }),
             resolve({
                 browser: true,
@@ -78,6 +98,19 @@ export default {
                 generate: 'ssr',
                 hydratable: true,
                 dev
+            }),
+            alias({
+                entries: [
+                    {
+                        find: '@components',
+                        replacement: path.resolve(projectRootDir, 'src/components')
+                    },
+                    {
+                        find: 'utils',
+                        replacement: path.resolve(projectRootDir, 'src/utils')
+                    }
+                ],
+                customResolver
             }),
             resolve({
                 dedupe: ['svelte']

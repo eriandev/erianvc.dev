@@ -18,8 +18,8 @@
     "export": "npm run css:build && sapper export",
     "start": "node __sapper__/build",
     "sapper:dev": "sapper dev",
-    "css:watch": "postcss src/styles/tailwind.css -o static/global.css -w",
-    "css:build": "cross-env NODE_ENV=production postcss src/styles/tailwind.css -o static/global.css"
+    "css:watch": "postcss src/tailwind.css -o static/global.css -w",
+    "css:build": "cross-env NODE_ENV=production postcss src/tailwind.css -o static/global.css"
   },
   "dependencies": {
     "compression": "^1.7.4",
@@ -33,6 +33,7 @@
     "@babel/preset-env": "^7.12.1",
     "@babel/runtime": "^7.12.1",
     "@fullhuman/postcss-purgecss": "^3.0.0",
+    "@rollup/plugin-alias": "^3.1.1",
     "@rollup/plugin-babel": "^5.2.1",
     "@rollup/plugin-commonjs": "^15.1.0",
     "@rollup/plugin-node-resolve": "^9.0.0",

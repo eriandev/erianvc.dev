@@ -1,9 +1,9 @@
 <script>
-    import Hero from '@segments/Hero.svelte'
-    import Projects from '@segments/Projects.svelte'
-    import Posts from '@segments/Posts.svelte'
-    import About from '@segments/About.svelte'
-    import Contact from '@segments/Contact.svelte'
+    import Hero from './_segments/Hero.svelte'
+    import Projects from './_segments/Projects.svelte'
+    import Posts from './_segments/Posts.svelte'
+    import About from './_segments/About.svelte'
+    import Contact from './_segments/Contact.svelte'
 </script>
 
 <Hero />
