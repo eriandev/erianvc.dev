@@ -10,7 +10,7 @@
 }
 
 body {
-    @apply relative text-gray-100 bg-even;
+    @apply relative min-h-screen text-gray-100 bg-even;
     -webkit-tap-highlight-color: transparent;
 }
 

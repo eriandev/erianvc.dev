@@ -7,10 +7,15 @@
 
     const updateOnviewSegment = (sectionID) => onviewSegment = sectionID
 
+    const getThreshold = (width, height) => Math.min(width, height) / Math.max(width, height)
+
     onMount(() => {
+        const WIDTH = window.innerWidth
+        const HEIGHT = window.innerHeight
+
         const io = new IntersectionObserver((entries, observer) => {
             entries.forEach(entry => !!entry.isIntersecting && updateOnviewSegment(entry.target.id))
-        }, { threshold: [0.8] })
+        }, { threshold: getThreshold(WIDTH, HEIGHT) })
 
         allSections = document.querySelectorAll('section')
         allSections.forEach(section => io.observe(section))
