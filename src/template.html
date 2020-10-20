@@ -7,9 +7,21 @@
 
     %sapper.base%
 
+    <title>Erick Vargas | Portfolio</title>
+    <meta name="description" content="Developer passionate about programming and adoption of new technologies" />
+
     <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
     <link rel="manifest" href="manifest.json" crossorigin="use-credentials" />
     <link rel="apple-touch-icon" href="favicon.png" />
+
+    <meta name="twitter:creator" content="@erianvc" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://erianvc.dev/" />
+    <meta property="og:title" content="Erick Vargas | Portfolio" />
+    <meta property="og:image" content="https://erianvc.dev/images/preview.png" />
+    <meta property="og:description" content="Developer passionate about programming and adoption of new technologies" />
 
     <meta name="robots" content="index, follow" />
     <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
@@ -32,6 +44,22 @@
     %sapper.head%
 
     %sapper.styles%
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org/",
+            "@type": "Person",
+            "name": "Erick Vargas",
+            "url": "https://erianvc.dev",
+            "image": "https://erianvc.dev/images/preview.png",
+            "sameAs": [
+                "https://github.com/erianvc",
+                "https://www.linkedin.com/in/erianvc/",
+                "https://twitter.com/erianvc"
+            ],
+            "jobTitle": "Frontend Developer"
+        }
+    </script>
 </head>
 <body id="sapper">
 
