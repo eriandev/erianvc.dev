@@ -6,11 +6,11 @@
 
     let className = ''
 
+    let size = '100%'
     let firstSlide = 'logo'
-    let imgClasses = 'h-32'
 
     const firstClick = () => {
-        imgClasses = null
+        size = null
         firstSlide = 'qr-telegram'
     }
 </script>
@@ -21,15 +21,13 @@
     <input type="radio" name="slider" id="s1" bind:group={selected} value={1} />
 
     <label for="s3" id="mail">
-        <Icon class="rounded-lg sm:rounded-xl {imgClasses}" name="qr-mail" />
+        <Icon class="rounded-lg sm:rounded-xl" name="qr-mail" {size} />
     </label>
     <label for="s1" id="linkedin">
-        <Icon
-            class="rounded-lg sm:rounded-xl {imgClasses}"
-            name="qr-linkedin" />
+        <Icon class="rounded-lg sm:rounded-xl" name="qr-linkedin" {size} />
     </label>
     <label for="s2" id="telegram" on:click|once={firstClick}>
-        <Icon class="rounded-lg sm:rounded-xl" name={firstSlide} />
+        <Icon class="rounded-lg sm:rounded-xl" name={firstSlide} {size} />
     </label>
 </article>
 

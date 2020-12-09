@@ -6,7 +6,7 @@
 
 <section id="hero">
     <div class="container">
-        <Icon class="h-40 mb-4" name="logo" center />
+        <Icon class="mx-auto mb-4" name="logo" size="160" />
 
         <h1 class="title prime">Erick Vargas</h1>
         <h2 class="subtitle">Frontend Developer</h2>

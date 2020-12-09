@@ -16,9 +16,9 @@
         </p>
         <p>
             Developed with
-            <Icon class="inline w-4 h-4 mb-1" name="love" />
+            <Icon class="inline mb-1" name="love" size="16" />
             and
-            <Icon class="inline w-4 h-4 mb-1" name="sapper" />
+            <Icon class="inline mb-1" name="sapper" size="16" />
         </p>
     </div>
 </footer>

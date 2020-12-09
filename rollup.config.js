@@ -1,14 +1,15 @@
+import path from 'path'
 import resolve from '@rollup/plugin-node-resolve'
 import replace from '@rollup/plugin-replace'
 import commonjs from '@rollup/plugin-commonjs'
-import svelte from 'rollup-plugin-svelte'
 import babel from '@rollup/plugin-babel'
-import { terser } from 'rollup-plugin-terser'
-import config from 'sapper/config/rollup.js'
-import sveltePreprocess from 'svelte-preprocess'
 import alias from '@rollup/plugin-alias'
+import { terser } from 'rollup-plugin-terser'
+import svelte from 'rollup-plugin-svelte'
+import sveltePreprocess from 'svelte-preprocess'
+import svelteSVG from 'rollup-plugin-svelte-svg'
+import config from 'sapper/config/rollup.js'
 import pkg from './package.json'
-import path from 'path'
 
 const mode = process.env.NODE_ENV
 const dev = mode === 'development'
@@ -44,13 +45,17 @@ export default {
             alias({
                 entries: [
                     {
+                        find: 'utils',
+                        replacement: path.resolve(projectRootDir, 'src/utils')
+                    },
+                    {
+                        find: '@assets',
+                        replacement: path.resolve(projectRootDir, 'src/assets')
+                    },
+                    {
                         find: '@components',
                         replacement: path.resolve(projectRootDir, 'src/components')
                     },
-                    {
-                        find: 'utils',
-                        replacement: path.resolve(projectRootDir, 'src/utils')
-                    }
                 ],
                 customResolver
             }),
@@ -59,6 +64,7 @@ export default {
                 dedupe: ['svelte']
             }),
             commonjs(),
+            svelteSVG({ dev }),
 
             legacy && babel({
                 extensions: ['.js', '.mjs', '.html', '.svelte'],
@@ -103,20 +109,25 @@ export default {
             alias({
                 entries: [
                     {
+                        find: 'utils',
+                        replacement: path.resolve(projectRootDir, 'src/utils')
+                    },
+                    {
+                        find: '@assets',
+                        replacement: path.resolve(projectRootDir, 'src/assets')
+                    },
+                    {
                         find: '@components',
                         replacement: path.resolve(projectRootDir, 'src/components')
                     },
-                    {
-                        find: 'utils',
-                        replacement: path.resolve(projectRootDir, 'src/utils')
-                    }
                 ],
                 customResolver
             }),
             resolve({
                 dedupe: ['svelte']
             }),
-            commonjs()
+            commonjs(),
+            svelteSVG({ generate: 'ssr', dev }),
         ],
         external: Object.keys(pkg.dependencies).concat(require('module').builtinModules),
 

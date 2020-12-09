@@ -21,32 +21,23 @@
 
         <div class="socials">
             <div class="flex w-full mb-2">
-                <Icon
-                    class="self-center inline w-6 h-6 text-gray-700 fill-current"
-                    name="location" />
-                <Text class="inline w-1/2">Lima, Peru</Text>
+                <Text left class="inline">Lima, Peru</Text>
             </div>
 
-            <ul class="w-full">
+            <ul>
                 <li>
                     <Link external to={LINKEDIN}>
-                        <Icon
-                            class="w-6 h-6 text-gray-700 fill-current"
-                            name="linkedin" />
+                        <Icon name="linkedin" />
                     </Link>
                 </li>
                 <li>
                     <Link external to={GITHUB}>
-                        <Icon
-                            class="w-6 h-6 text-gray-700 fill-current"
-                            name="github" />
+                        <Icon name="github" />
                     </Link>
                 </li>
                 <li>
                     <Link external to={TWITTER}>
-                        <Icon
-                            class="w-6 h-6 text-gray-700 fill-current"
-                            name="twitter" />
+                        <Icon name="twitter" />
                     </Link>
                 </li>
             </ul>
