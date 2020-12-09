@@ -21,7 +21,16 @@
     }
 </script>
 
-<img loading="lazy" class={className} class:cornerless class:circle class:preview {src} {title} {alt} on:error={errorHandler} />
+<img
+    loading="lazy"
+    class={className}
+    class:cornerless
+    class:circle
+    class:preview
+    {src}
+    {title}
+    {alt}
+    on:error={errorHandler} />
 
 <style>
     .preview {

@@ -12,54 +12,62 @@
 
     <article class="look-at-me">
         <div class="img-container">
-            <Image circle class="w-24 h-24 border-4 md:w-40 md:h-40 border-prime" src="images/photo.png" title="Erick photo" />
+            <Image
+                circle
+                class="w-24 h-24 border-4 md:w-40 md:h-40 border-prime"
+                src="images/photo.png"
+                title="Erick photo" />
         </div>
 
         <div class="socials">
-
             <div class="flex w-full mb-2">
-                <Icon class="self-center inline w-6 h-6 text-gray-700 fill-current" name="location" />
+                <Icon
+                    class="self-center inline w-6 h-6 text-gray-700 fill-current"
+                    name="location" />
                 <Text class="inline w-1/2">Lima, Peru</Text>
             </div>
 
             <ul class="w-full">
                 <li>
                     <Link external to={LINKEDIN}>
-                        <Icon class="w-6 h-6 text-gray-700 fill-current" name="linkedin" />
+                        <Icon
+                            class="w-6 h-6 text-gray-700 fill-current"
+                            name="linkedin" />
                     </Link>
                 </li>
                 <li>
                     <Link external to={GITHUB}>
-                        <Icon class="w-6 h-6 text-gray-700 fill-current" name="github" />
+                        <Icon
+                            class="w-6 h-6 text-gray-700 fill-current"
+                            name="github" />
                     </Link>
                 </li>
                 <li>
                     <Link external to={TWITTER}>
-                        <Icon class="w-6 h-6 text-gray-700 fill-current" name="twitter" />
+                        <Icon
+                            class="w-6 h-6 text-gray-700 fill-current"
+                            name="twitter" />
                     </Link>
                 </li>
             </ul>
-
         </div>
     </article>
 
     <article class="container description">
         <Text class="mb-6">
-            Student of the professional career of Systems Engineering,
-            I am someone self-taught, proactive, effective, who loves technology 
-            and always be updated on new and better ways to do things well.
+            Student of the professional career of Systems Engineering, I am
+            someone self-taught, proactive, effective, who loves technology and
+            always be updated on new and better ways to do things well.
         </Text>
 
         <Text>
-            I am currently dedicated to the development of web applications 
-            that help solve the various problems that afflict the world today. 
+            I am currently dedicated to the development of web applications that
+            help solve the various problems that afflict the world today.
         </Text>
     </article>
 
     <div class="action-button">
-        <Button scrollTo="#contact" featured fill>
-            Let's work together
-        </Button>
+        <Button scrollTo="#contact" featured fill>Let's work together</Button>
     </div>
 </section>
 

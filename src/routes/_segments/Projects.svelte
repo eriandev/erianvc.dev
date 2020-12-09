@@ -8,7 +8,7 @@
 
     let data
 
-    onMount( async () => data = await getDataOf('projects'))
+    onMount(async () => (data = await getDataOf('projects')))
 </script>
 
 <section id="projects">
@@ -17,29 +17,26 @@
             <h3 class="title">Made from Scratch</h3>
 
             <Text right class="mb-6 xl:w-full 2xl:pl-24">
-                I have been puting the work crafting my knowledge,
-                gaining experience building real world projects.
+                I have been puting the work crafting my knowledge, gaining
+                experience building real world projects.
             </Text>
 
             <Text right class="mb-8 xl:w-full 2xl:pl-24">
-                Practice is an important aspect for any skill <br class="hidden xl:block">even more in software development. 
+                Practice is an important aspect for any skill
+                <br class="hidden xl:block" />even more in software development.
             </Text>
 
             <h4 class="emphasis">Watch the cool stuff I have built</h4>
 
             <div class="btn-desktop">
-                <Link external to={GITHUB} btn outline>
-                    View more projects
-                </Link>
+                <Link external to={GITHUB} btn outline>View more projects</Link>
             </div>
         </article>
 
         <SliderGrid for="projects" {data} />
 
         <div class="btn-mobile">
-            <Link external to={GITHUB} btn outline>
-                View more projects
-            </Link>
+            <Link external to={GITHUB} btn outline>View more projects</Link>
         </div>
     </div>
 </section>

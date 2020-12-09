@@ -24,7 +24,9 @@
         <Icon class="rounded-lg sm:rounded-xl {imgClasses}" name="qr-mail" />
     </label>
     <label for="s1" id="linkedin">
-        <Icon class="rounded-lg sm:rounded-xl {imgClasses}" name="qr-linkedin" />
+        <Icon
+            class="rounded-lg sm:rounded-xl {imgClasses}"
+            name="qr-linkedin" />
     </label>
     <label for="s2" id="telegram" on:click|once={firstClick}>
         <Icon class="rounded-lg sm:rounded-xl" name={firstSlide} />
@@ -54,23 +56,26 @@
     #s1:checked ~ #mail,
     #s2:checked ~ #linkedin {
         @apply opacity-50;
-        box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
-        transform: translate3d(-40%,0,0);
+        box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3),
+            0 2px 2px 0 rgba(0, 0, 0, 0.2);
+        transform: translate3d(-40%, 0, 0);
     }
 
     #s3:checked ~ #mail,
     #s1:checked ~ #linkedin,
     #s2:checked ~ #telegram {
-        box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
-        transform: translate3d(0,0,100px);
+        box-shadow: 0 13px 25px 0 rgba(0, 0, 0, 0.3),
+            0 11px 7px 0 rgba(0, 0, 0, 0.19);
+        transform: translate3d(0, 0, 100px);
     }
 
     #s3:checked ~ #linkedin,
     #s1:checked ~ #telegram,
     #s2:checked ~ #mail {
         @apply opacity-50;
-        box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
-        transform: translate3d(40%,0,0);
+        box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3),
+            0 2px 2px 0 rgba(0, 0, 0, 0.2);
+        transform: translate3d(40%, 0, 0);
     }
 
     @screen sm {

@@ -5,8 +5,21 @@
 
 <footer>
     <div class="content">
-        <p>Designed by <Link external to="https://www.linkedin.com/in/juancarlos-cruz" class="border-b-2 border-prime text-prime font-fira hover:text-primary">Juan Carlos Cruz</Link></p>
-        <p>Developed with <Icon class="inline w-4 h-4 mb-1" name="love" /> and <Icon class="inline w-4 h-4 mb-1" name="sapper" /></p>
+        <p>
+            Designed by
+            <Link
+                external
+                to="https://www.linkedin.com/in/juancarlos-cruz"
+                class="border-b-2 border-prime text-prime font-fira hover:text-primary">
+                Juan Carlos Cruz
+            </Link>
+        </p>
+        <p>
+            Developed with
+            <Icon class="inline w-4 h-4 mb-1" name="love" />
+            and
+            <Icon class="inline w-4 h-4 mb-1" name="sapper" />
+        </p>
     </div>
 </footer>
 

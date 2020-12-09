@@ -8,11 +8,11 @@
 
     const ERROR_MSG = {
         404: 'Page Not Found',
-        500: 'Internal Server Error'
+        500: 'Internal Server Error',
     }
 
     const dev = process.env.NODE_ENV === 'development'
-    const toggleVisibility = () => showModal = !showModal
+    const toggleVisibility = () => (showModal = !showModal)
 </script>
 
 <svelte:head>
@@ -32,17 +32,13 @@
     </div>
 
     {#if dev && error.stack}
-        <button on:click={toggleVisibility}>
-            More info
-        </button>
+        <button on:click={toggleVisibility}> More info </button>
 
         {#if showModal}
             <div class="error-info">
                 <div class="error-stack">
                     <span>{error.message}</span>
-                    <p class="message-stack">
-                        {error.stack}
-                    </p>
+                    <p class="message-stack">{error.stack}</p>
                     <button class="w-full" on:click={toggleVisibility}>
                         Close
                     </button>
@@ -80,7 +76,7 @@
 
     .error-info {
         @apply fixed top-0 left-0 z-20 flex flex-wrap content-center justify-center w-screen min-h-screen;
-        background-color: rgba(0,0,0,0.4);
+        background-color: rgba(0, 0, 0, 0.4);
     }
 
     .error-stack {

@@ -6,18 +6,17 @@
 
 <section id="hero">
     <div class="container">
-        <Icon class="h-40 mb-4" name="logo" center/>
+        <Icon class="h-40 mb-4" name="logo" center />
 
         <h1 class="title prime">Erick Vargas</h1>
         <h2 class="subtitle">Frontend Developer</h2>
 
         <Text class="mb-4 sm:px-8 md:mb-8 2xl:px-16">
-            Focused on improving performance and the user experience in your web applications.
+            Focused on improving performance and the user experience in your web
+            applications.
         </Text>
 
-        <Button scrollTo="#projects" featured fill>
-            See my projects
-        </Button>
+        <Button scrollTo="#projects" featured fill>See my projects</Button>
     </div>
 </section>
 

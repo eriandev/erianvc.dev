@@ -13,10 +13,18 @@
     let className = ''
     let element = false
 
-    const scrollTo = () => element ? animatedScroll({ element, duration }) : null
+    const scrollTo = () =>
+        element ? animatedScroll({ element, duration }) : null
 </script>
 
-<button class={className} class:btn class:featured class:small class:fill class:outline on:click={scrollTo}>
+<button
+    class={className}
+    class:btn
+    class:featured
+    class:small
+    class:fill
+    class:outline
+    on:click={scrollTo}>
     <slot />
 </button>
 

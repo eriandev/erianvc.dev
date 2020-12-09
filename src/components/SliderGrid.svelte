@@ -1,5 +1,5 @@
 <script>
-	import getBaseURL from 'utils/baseURL'
+    import getBaseURL from 'utils/baseURL'
     import Link from '@components/Link.svelte'
     import Card from '@components/Card.svelte'
     import { GITHUB, DEVTO } from 'utils/socials'
@@ -15,21 +15,24 @@
 
 <article class:projects class:posts>
     {#each Array(4) as unusedItem, position}
-
         {#if data[position]}
             <Link external to={data[position].link}>
-                <Card class="mr-6" title={data[position].title} preview={data[position].preview} />
+                <Card
+                    class="mr-6"
+                    title={data[position].title}
+                    preview={data[position].preview} />
             </Link>
         {/if}
-
     {/each}
 
     <Link external to={type === 'projects' ? GITHUB : DEVTO} class="md:hidden">
-        <Card class="mr-0" title="See more {type}" preview="{getBaseURL()}images/see-more-{type}.png" />
+        <Card
+            class="mr-0"
+            title="See more {type}"
+            preview="{getBaseURL()}images/see-more-{type}.png" />
     </Link>
 
     <aside>x</aside>
-
 </article>
 
 <style>
@@ -42,21 +45,19 @@
     }
 
     article::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 8px rgba(0,0,0,0.3);
-        -webkit-box-shadow: inset 0 0 8px rgba(0,0,0,0.3);
+        box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3);
+        -webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3);
     }
 
     article::-webkit-scrollbar-thumb {
         @apply bg-prime;
-        outline: 1px solid #2D3748;
+        outline: 1px solid #2d3748;
     }
 
     aside {
         @apply flex-none invisible;
         margin-left: 10px;
     }
-
-
 
     @screen sm {
         article {

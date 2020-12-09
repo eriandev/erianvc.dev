@@ -8,7 +8,7 @@
 
     let data
 
-    onMount( async () => data = await getDataOf('posts'))
+    onMount(async () => (data = await getDataOf('posts')))
 </script>
 
 <section id="posts">
@@ -17,29 +17,27 @@
             <h3 class="title">Sharing what I know</h3>
 
             <Text left class="mb-6 xl:w-full">
-                I believe that sharing our knowledge is the best thing to improve as a professional.
-                That is why I have wrote short but effective articles about different topics.
+                I believe that sharing our knowledge is the best thing to
+                improve as a professional. That is why I have wrote short but
+                effective articles about different topics.
             </Text>
 
             <Text left class="mb-8 xl:w-full">
-                Don’t be shy and take a look at what I have for you and hope you can learn something. 
+                Don’t be shy and take a look at what I have for you and hope you
+                can learn something.
             </Text>
 
             <h4 class="emphasis">Cool articles to read</h4>
 
             <div class="btn-desktop">
-                <Link external to={DEVTO} btn outline>
-                    View more posts
-                </Link>
+                <Link external to={DEVTO} btn outline>View more posts</Link>
             </div>
         </article>
 
         <SliderGrid for="posts" {data} />
 
         <div class="btn-mobile">
-            <Link external to={DEVTO} btn outline>
-                View more posts
-            </Link>
+            <Link external to={DEVTO} btn outline>View more posts</Link>
         </div>
     </div>
 </section>

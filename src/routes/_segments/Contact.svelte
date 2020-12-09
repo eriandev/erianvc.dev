@@ -10,20 +10,19 @@
     const QR_DATA = [
         {
             link: 'https://www.linkedin.com/in/erianvc/',
-            msg: 'More about me on Linkedin'
-
+            msg: 'More about me on Linkedin',
         },
         {
             link: 'https://t.me/erianvc/',
-            msg: 'Let\'s talk throught Telegram!'
+            msg: "Let's talk throught Telegram!",
         },
         {
             link: 'mailto:erianvc.dev@gmail.com',
-            msg: 'Or send me an email'
+            msg: 'Or send me an email',
         },
     ]
 
-    onMount(() => clickTap = 'ontouchstart' in window ? 'Tap' : 'Click')
+    onMount(() => (clickTap = 'ontouchstart' in window ? 'Tap' : 'Click'))
 </script>
 
 <section id="contact">
@@ -31,16 +30,19 @@
         <h3 class="title">Get in Touch</h3>
 
         <Text class="mb-12">
-            Whether it is a small venture, complex web app or business software, 
+            Whether it is a small venture, complex web app or business software,
             contact me and we will discuss it thoroughly.
         </Text>
 
         {#if selected}
-            <Link external to={QR_DATA[selected-1].link} btn small outline>
-                {QR_DATA[selected-1].msg}
+            <Link external to={QR_DATA[selected - 1].link} btn small outline>
+                {QR_DATA[selected - 1].msg}
             </Link>
         {:else}
-            <h4 class="emphasis">{clickTap} on my logo to know how to contact me</h4>
+            <h4 class="emphasis">
+                {clickTap}
+                on my logo to know how to contact me
+            </h4>
         {/if}
 
         <Slider class="mt-12 mb-16" bind:selected />
