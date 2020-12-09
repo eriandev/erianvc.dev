@@ -38,7 +38,8 @@ export default {
             svelte({
                 preprocess,
                 dev,
-                hydratable: true
+                hydratable: true,
+                emitCss: true,
             }),
             alias({
                 entries: [

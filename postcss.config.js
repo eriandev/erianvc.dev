@@ -3,25 +3,18 @@ const dev = mode === 'development'
 
 module.exports = {
     plugins: [
-        require('postcss-import')(),
-        require('postcss-url')(),
         require('tailwindcss')('./tailwind.config.js'),
-        require('autoprefixer')(),
+        require('postcss-preset-env')(),
         !dev &&
-            require('@fullhuman/postcss-purgecss')({
-                content: ['./src/**/*.svelte', './src/**/*.html'],
-                whitelist: ['container'],
-                defaultExtractor: (content) =>
-                    [...content.matchAll(/(?:class:)*([\w\d-/:%.]+)/gm)].map(
-                        ([_match, group, ..._rest]) => group
-                    ),
+            require('cssnano')({
+                preset: [
+                    'default',
+                    {
+                        discardComments: {
+                            removeAll: true,
+                        },
+                    },
+                ],
             }),
-        !dev && require('cssnano')({
-            preset: ['default', {
-                discardComments: {
-                    removeAll: true,
-                },
-            }],
-        }),
-	],
+    ],
 }
