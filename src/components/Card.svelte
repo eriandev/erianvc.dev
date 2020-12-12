@@ -12,7 +12,7 @@
 </script>
 
 <div class={className} class:card>
-    <Image preview cornerless {src} {title} />
+    <Image preview {src} {title} class="rounded" />
     <h5>{title}</h5>
 </div>
 

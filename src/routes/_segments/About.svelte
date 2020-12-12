@@ -13,10 +13,9 @@
     <article class="look-at-me">
         <div class="img-container">
             <Image
-                circle
-                class="w-24 h-24 border-4 md:w-40 md:h-40 border-prime"
-                src="images/photo.png"
-                title="Erick photo" />
+                name="photo"
+                title="Erick photo"
+                class="w-24 h-24 border-4 rounded-full md:w-40 md:h-40 border-prime" />
         </div>
 
         <div class="socials">

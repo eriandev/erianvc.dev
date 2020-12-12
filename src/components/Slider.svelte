@@ -1,17 +1,19 @@
 <script>
-    import Icon from '@components/Icon.svelte'
+    import Image from '@components/Image.svelte'
 
     export let selected = false
     export { className as class }
 
     let className = ''
 
-    let size = '100%'
+    let title = 'Logo'
     let firstSlide = 'logo'
+    let imgClasses = 'rounded-lg sm:rounded-xl h-32'
 
     const firstClick = () => {
-        size = null
+        title = 'QR Telegram'
         firstSlide = 'qr-telegram'
+        imgClasses = 'rounded-lg sm:rounded-xl'
     }
 </script>
 
@@ -21,13 +23,21 @@
     <input type="radio" name="slider" id="s1" bind:group={selected} value={1} />
 
     <label for="s3" id="mail">
-        <Icon class="rounded-lg sm:rounded-xl" name="qr-mail" {size} />
+        <Image name="qr-mail" type="svg" title="QR Mail" class={imgClasses} />
     </label>
     <label for="s1" id="linkedin">
-        <Icon class="rounded-lg sm:rounded-xl" name="qr-linkedin" {size} />
+        <Image
+            name="qr-linkedin"
+            type="svg"
+            title="QR Linkedin"
+            class={imgClasses} />
     </label>
     <label for="s2" id="telegram" on:click|once={firstClick}>
-        <Icon class="rounded-lg sm:rounded-xl" name={firstSlide} {size} />
+        <Image
+            name={firstSlide}
+            type="svg"
+            {title}
+            class="rounded-lg sm:rounded-xl" />
     </label>
 </article>
 

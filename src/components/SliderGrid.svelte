@@ -29,7 +29,7 @@
         <Card
             class="mr-0"
             title="See more {type}"
-            preview="{getBaseURL()}images/see-more-{type}.png" />
+            preview="{getBaseURL()}images/see-more-{type}.webp" />
     </Link>
 
     <aside>x</aside>
