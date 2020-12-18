@@ -1,8 +1,7 @@
 <script>
-    import getBaseURL from 'utils/baseURL'
+    import { BASE_URL, SOCIALS } from 'utils/constants'
     import Link from '@components/Link.svelte'
     import Card from '@components/Card.svelte'
-    import { GITHUB, DEVTO } from 'utils/socials'
 
     export let data = []
     export { type as for }
@@ -25,11 +24,14 @@
         {/if}
     {/each}
 
-    <Link external to={type === 'projects' ? GITHUB : DEVTO} class="md:hidden">
+    <Link
+        external
+        to={type === 'projects' ? SOCIALS.GITHUB : SOCIALS.DEVTO}
+        class="md:hidden">
         <Card
             class="mr-0"
             title="See more {type}"
-            preview="{getBaseURL()}images/see-more-{type}.webp" />
+            preview="{BASE_URL}images/see-more-{type}.webp" />
     </Link>
 
     <aside>x</aside>

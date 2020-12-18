@@ -1,5 +1,5 @@
 <script>
-    import getBaseURL from 'utils/baseURL'
+    import { BASE_URL } from 'utils/constants'
 
     export let src = false
     export let type = 'webp'
@@ -11,7 +11,7 @@
     let className = ''
 
     const TITLE_404 = 'Not found'
-    const IMG_404 = `${getBaseURL()}images/not_found.svg`
+    const IMG_404 = `${BASE_URL}images/not_found.svg`
 
     const getName = () =>
         title
@@ -33,7 +33,7 @@
     loading="lazy"
     class:preview
     class={className}
-    src={src ? src : `${getBaseURL()}images/${name}.${type}`}
+    src={src ? src : `${BASE_URL}images/${name}.${type}`}
     title={getName()}
     alt={getName()}
     on:click

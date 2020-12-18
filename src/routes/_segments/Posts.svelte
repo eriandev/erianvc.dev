@@ -1,14 +1,14 @@
 <script>
     import { onMount } from 'svelte'
-    import getDataOf from 'utils/dataOf'
-    import { DEVTO } from 'utils/socials'
+    import { SOCIALS } from 'utils/constants'
+    import { getFeaturedDataOf } from 'utils/data'
     import Text from '@components/Text.svelte'
     import Link from '@components/Link.svelte'
     import SliderGrid from '@components/SliderGrid.svelte'
 
     let data
 
-    onMount(async () => (data = await getDataOf('posts')))
+    onMount(async () => (data = await getFeaturedDataOf('posts')))
 </script>
 
 <section id="posts">
@@ -30,14 +30,16 @@
             <h4 class="emphasis">Cool articles to read</h4>
 
             <div class="btn-desktop">
-                <Link external to={DEVTO} btn outline>View more posts</Link>
+                <Link external to={SOCIALS.DEVTO} btn outline>
+                    View more posts
+                </Link>
             </div>
         </article>
 
         <SliderGrid for="posts" {data} />
 
         <div class="btn-mobile">
-            <Link external to={DEVTO} btn outline>View more posts</Link>
+            <Link external to={SOCIALS.DEVTO} btn outline>View more posts</Link>
         </div>
     </div>
 </section>

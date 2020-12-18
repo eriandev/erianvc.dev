@@ -1,14 +1,14 @@
 <script>
     import { onMount } from 'svelte'
-    import getDataOf from 'utils/dataOf'
-    import { GITHUB } from 'utils/socials'
+    import { SOCIALS } from 'utils/constants'
+    import { getFeaturedDataOf } from 'utils/data'
     import Text from '@components/Text.svelte'
     import Link from '@components/Link.svelte'
     import SliderGrid from '@components/SliderGrid.svelte'
 
     let data
 
-    onMount(async () => (data = await getDataOf('projects')))
+    onMount(async () => (data = await getFeaturedDataOf('projects')))
 </script>
 
 <section id="projects">
@@ -29,14 +29,18 @@
             <h4 class="emphasis">Watch the cool stuff I have built</h4>
 
             <div class="btn-desktop">
-                <Link external to={GITHUB} btn outline>View more projects</Link>
+                <Link external to={SOCIALS.GITHUB} btn outline>
+                    View more projects
+                </Link>
             </div>
         </article>
 
         <SliderGrid for="projects" {data} />
 
         <div class="btn-mobile">
-            <Link external to={GITHUB} btn outline>View more projects</Link>
+            <Link external to={SOCIALS.GITHUB} btn outline>
+                View more projects
+            </Link>
         </div>
     </div>
 </section>

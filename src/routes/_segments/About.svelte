@@ -1,10 +1,10 @@
 <script>
+    import { SOCIALS } from 'utils/constants'
     import Text from '@components/Text.svelte'
     import Image from '@components/Image.svelte'
     import Icon from '@components/Icon.svelte'
     import Link from '@components/Link.svelte'
     import Button from '@components/Button.svelte'
-    import { LINKEDIN, GITHUB, TWITTER } from 'utils/socials'
 </script>
 
 <section id="about">
@@ -25,17 +25,17 @@
 
             <ul>
                 <li>
-                    <Link external to={LINKEDIN}>
+                    <Link external to={SOCIALS.LINKEDIN}>
                         <Icon name="linkedin" />
                     </Link>
                 </li>
                 <li>
-                    <Link external to={GITHUB}>
+                    <Link external to={SOCIALS.GITHUB}>
                         <Icon name="github" />
                     </Link>
                 </li>
                 <li>
-                    <Link external to={TWITTER}>
+                    <Link external to={SOCIALS.TWITTER}>
                         <Icon name="twitter" />
                     </Link>
                 </li>

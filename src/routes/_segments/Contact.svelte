@@ -1,26 +1,12 @@
 <script>
     import { onMount } from 'svelte'
+    import { QR_DATA } from 'utils/constants'
     import Text from '@components/Text.svelte'
     import Link from '@components/Link.svelte'
     import Slider from '@components/Slider.svelte'
 
     let selected
     let clickTap
-
-    const QR_DATA = [
-        {
-            link: 'https://www.linkedin.com/in/erianvc/',
-            msg: 'More about me on Linkedin',
-        },
-        {
-            link: 'https://t.me/erianvc/',
-            msg: "Let's talk throught Telegram!",
-        },
-        {
-            link: 'mailto:erianvc.dev@gmail.com',
-            msg: 'Or send me an email',
-        },
-    ]
 
     onMount(() => (clickTap = 'ontouchstart' in window ? 'Tap' : 'Click'))
 </script>
