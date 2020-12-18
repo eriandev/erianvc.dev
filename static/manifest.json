@@ -1,25 +1,16 @@
 {
     "name": "Erick Vargas",
     "short_name": "erianvc",
+    "description": "Developer passionate about programming and adoption of new technologies",
     "background_color": "#222B3C",
-    "theme_color": "#1A202C",
+    "theme_color": "#02ABB1",
     "display": "minimal-ui",
-    "start_url": "/",
+    "start_url": "https://erianvc.dev/",
     "icons": [
         {
-            "src": "/icons/192x192.png",
+            "src": "/icons/120x120.png",
             "type": "image/png",
-            "sizes": "192x192"
-        },
-        {
-            "src": "/icons/180x180.png",
-            "type": "image/png",
-            "sizes": "180x180"
-        },
-        {
-            "src": "/icons/152x152.png",
-            "type": "image/png",
-            "sizes": "152x152"
+            "sizes": "120x120"
         },
         {
             "src": "/icons/144x144.png",
@@ -27,49 +18,24 @@
             "sizes": "144x144"
         },
         {
-            "src": "/icons/120x120.png",
+            "src": "/icons/152x152.png",
             "type": "image/png",
-            "sizes": "120x120"
+            "sizes": "152x152"
         },
         {
-            "src": "/icons/114x114.png",
+            "src": "/icons/180x180.png",
             "type": "image/png",
-            "sizes": "114x114"
+            "sizes": "180x180"
         },
         {
-            "src": "/icons/96x96.png",
+            "src": "/icons/192x192.png",
             "type": "image/png",
-            "sizes": "96x96"
+            "sizes": "192x192"
         },
         {
-            "src": "/icons/76x76.png",
+            "src": "/icons/512x512.png",
             "type": "image/png",
-            "sizes": "76x76"
-        },
-        {
-            "src": "/icons/72x72.png",
-            "type": "image/png",
-            "sizes": "72x72"
-        },
-        {
-            "src": "/icons/60x60.png",
-            "type": "image/png",
-            "sizes": "60x60"
-        },
-        {
-            "src": "/icons/57x57.png",
-            "type": "image/png",
-            "sizes": "57x57"
-        },
-        {
-            "src": "/icons/32x32.png",
-            "type": "image/png",
-            "sizes": "32x32"
-        },
-        {
-            "src": "/icons/16x16.png",
-            "type": "image/png",
-            "sizes": "16x16"
+            "sizes": "512x512"
         },
         {
             "src": "/icons/maskable_icon.png",
@@ -78,5 +44,5 @@
             "purpose": "any maskable"
         }
     ],
-    "prefer_related_applications": "false"
+    "prefer_related_applications": false
 }
