@@ -92,17 +92,6 @@ module.exports = {
             xl: '2rem',
             full: '50%',
         },
-        extend: {
-            maxWidth: {
-                '300': '300px',
-                '380': '380px',
-            },
-            maxHeight: {
-                none: 'none',
-                '180': '180px',
-                '220': '220px',
-            }
-        }
     },
     variants: {},
     plugins: [],

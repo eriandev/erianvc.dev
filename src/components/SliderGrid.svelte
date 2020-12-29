@@ -13,7 +13,7 @@
 </script>
 
 <article class:projects class:posts>
-    {#each Array(4) as unusedItem, position}
+    {#each Array(4) as _unusedItem, position}
         {#if data[position]}
             <Link external to={data[position].link}>
                 <Card

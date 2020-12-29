@@ -1,5 +1,5 @@
 <script>
-    import { SOCIALS } from 'utils/constants'
+    import { BASE_URL, SOCIALS } from 'utils/constants'
     import Text from '@components/Text.svelte'
     import Image from '@components/Image.svelte'
     import Icon from '@components/Icon.svelte'
@@ -13,8 +13,8 @@
     <article class="look-at-me">
         <div class="img-container">
             <Image
-                name="photo"
-                title="Erick photo"
+                src="{BASE_URL}images/photo.webp"
+                title="Erick Vargas photo"
                 class="w-24 h-24 border-4 rounded-full md:w-40 md:h-40 border-prime" />
         </div>
 

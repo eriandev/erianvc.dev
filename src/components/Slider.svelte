@@ -1,4 +1,5 @@
 <script>
+    import { BASE_URL } from 'utils/constants'
     import Image from '@components/Image.svelte'
 
     export let selected = false
@@ -6,13 +7,11 @@
 
     let className = ''
 
-    let title = 'Logo'
-    let firstSlide = 'logo'
-    let imgClasses = 'rounded-lg sm:rounded-xl h-32'
+    let clicked = false
+    let imgClasses = 'rounded-full'
 
     const firstClick = () => {
-        title = 'QR Telegram'
-        firstSlide = 'qr-telegram'
+        clicked = true
         imgClasses = 'rounded-lg sm:rounded-xl'
     }
 </script>
@@ -23,21 +22,37 @@
     <input type="radio" name="slider" id="s1" bind:group={selected} value={1} />
 
     <label for="s3" id="mail">
-        <Image name="qr-mail" type="svg" title="QR Mail" class={imgClasses} />
+        <Image
+            src="{BASE_URL}images/qr-mail.svg"
+            title="QR Mail"
+            width="100%"
+            height="100%"
+            class={imgClasses} />
     </label>
     <label for="s1" id="linkedin">
         <Image
-            name="qr-linkedin"
-            type="svg"
+            src="{BASE_URL}images/qr-linkedin.svg"
             title="QR Linkedin"
+            width="100%"
+            height="100%"
             class={imgClasses} />
     </label>
     <label for="s2" id="telegram" on:click|once={firstClick}>
-        <Image
-            name={firstSlide}
-            type="svg"
-            {title}
-            class="rounded-lg sm:rounded-xl" />
+        {#if !clicked}
+            <Image
+                src="{BASE_URL}images/logo.svg"
+                title="Logo"
+                width="12.5rem"
+                height="12.5rem"
+                class="rounded-full" />
+        {:else}
+            <Image
+                src="{BASE_URL}images/qr-telegram.svg"
+                title="QR Telegram"
+                width="100%"
+                height="100%"
+                class="rounded-lg sm:rounded-xl" />
+        {/if}
     </label>
 </article>
 

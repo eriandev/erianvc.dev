@@ -11,17 +11,18 @@
     const card = true
 </script>
 
-<div class={className} class:card>
-    <Image preview {src} {title} class="rounded" />
+<div class:card class={className}>
+    <Image {src} {title} class="rounded" />
     <h5>{title}</h5>
 </div>
 
 <style>
     .card {
-        @apply w-full h-full md:mx-0;
+        width: 300px;
+        height: auto;
     }
 
     h5 {
-        @apply pl-1 mt-2 text-sm text-left text-gray-300 font-fira leading-title xl:text-base 2xl:text-xl;
+        @apply pl-1 mt-2 text-sm text-left text-gray-300 font-fira leading-title xl:text-base;
     }
 </style>

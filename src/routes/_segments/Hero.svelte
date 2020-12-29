@@ -1,4 +1,5 @@
 <script>
+    import { BASE_URL } from 'utils/constants'
     import Text from '@components/Text.svelte'
     import Image from '@components/Image.svelte'
     import Button from '@components/Button.svelte'
@@ -6,7 +7,12 @@
 
 <section id="hero">
     <div class="container">
-        <Image name="logo" type="svg" class="w-40 h-40 mx-auto mb-4" />
+        <Image
+            class="mx-auto mb-4 rounded-full"
+            src="{BASE_URL}images/logo.svg"
+            width="10rem"
+            height="10rem"
+            title="Logo" />
 
         <h1 class="title prime">Erick Vargas</h1>
         <h2 class="subtitle">Frontend Developer</h2>

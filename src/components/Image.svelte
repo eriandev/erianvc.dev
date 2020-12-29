@@ -2,24 +2,27 @@
     import { BASE_URL } from 'utils/constants'
 
     export let src = false
-    export let type = 'webp'
-    export let title = false
-    export let preview = false
-    export let name = 'not_found'
+    export let width = '300px'
+    export let height = '169px'
+    export let title = TITLE_404
     export { className as class }
 
     let className = ''
 
+    const loaded = new Map()
     const TITLE_404 = 'Not found'
-    const IMG_404 = `${BASE_URL}images/not_found.svg`
+    const IMG_404 = `${BASE_URL}images/not-found.svg`
 
-    const getName = () =>
-        title
-            ? title
-            : (name.charAt(0).toUpperCase() + name.slice(1)).replace(
-                  /(-|_)/g,
-                  ' ',
-              )
+    const lazy = (node, data) => {
+        const img = new Image()
+        img.src = data.src
+        img.onload = () => {
+            loaded.set(data.src, img)
+            node.setAttribute('src', data.src)
+            node.setAttribute('title', title)
+            node.setAttribute('alt', title)
+        }
+    }
 
     function errorHandler() {
         this.onerror = null
@@ -30,17 +33,32 @@
 </script>
 
 <img
+    alt
     loading="lazy"
-    class:preview
     class={className}
-    src={src ? src : `${BASE_URL}images/${name}.${type}`}
-    title={getName()}
-    alt={getName()}
     on:click
-    on:error={errorHandler} />
+    on:error={errorHandler}
+    use:lazy={{ src: src ? src : IMG_404 }}
+    style="width: {width}; height: {height};" />
 
 <style>
-    .preview {
-        @apply max-w-300 max-h-180 md:w-full 2xl:max-w-380 2xl:max-h-220;
+    img {
+        @apply inline-block;
+        background-color: #f9f9f9;
+        animation: loading 3s infinite;
+    }
+
+    @keyframes loading {
+        100% {
+            background-color: #9ca3af;
+        }
+
+        50% {
+            background-color: #6b7280;
+        }
+
+        0% {
+            background-color: #9ca3af;
+        }
     }
 </style>
