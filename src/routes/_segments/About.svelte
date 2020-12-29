@@ -14,8 +14,10 @@
         <div class="img-container">
             <Image
                 src="{BASE_URL}images/photo.webp"
+                width="100%"
+                height="100%"
                 title="Erick Vargas photo"
-                class="w-24 h-24 border-4 rounded-full md:w-40 md:h-40 border-prime" />
+                class="border-4 rounded-full border-prime" />
         </div>
 
         <div class="socials">
@@ -25,17 +27,17 @@
 
             <ul>
                 <li>
-                    <Link external to={SOCIALS.LINKEDIN}>
+                    <Link external to={SOCIALS.LINKEDIN} label="Linkedin">
                         <Icon name="linkedin" />
                     </Link>
                 </li>
                 <li>
-                    <Link external to={SOCIALS.GITHUB}>
+                    <Link external to={SOCIALS.GITHUB} label="Github">
                         <Icon name="github" />
                     </Link>
                 </li>
                 <li>
-                    <Link external to={SOCIALS.TWITTER}>
+                    <Link external to={SOCIALS.TWITTER} label="Twitter">
                         <Icon name="twitter" />
                     </Link>
                 </li>
