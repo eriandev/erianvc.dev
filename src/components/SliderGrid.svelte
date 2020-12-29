@@ -39,7 +39,7 @@
 
 <style>
     article {
-        @apply flex flex-no-wrap justify-between px-4 pb-2 overflow-y-hidden text-center;
+        @apply flex justify-between px-4 pb-2 overflow-y-hidden text-center flex-nowrap;
     }
 
     article::-webkit-scrollbar {

@@ -1,17 +1,10 @@
 const { fontFamily } = require('tailwindcss/defaultTheme')
 
 module.exports = {
-    experimental: {
-        applyComplexClasses: true,
-    },
-    future: {
-        purgeLayersByDefault: true,
-        removeDeprecatedGapUtilities: true,
-    },
+    purge: ['./**/*.html', './**/*.svelte'],
     corePlugins: {
         container: false,
     },
-    purge: ['./src/**/*.svelte', './src/**/*.html'],
     theme: {
         screens: {
             sm: '600px',
@@ -21,21 +14,21 @@ module.exports = {
             '2xl': '1900px',
         },
         spacing: {
-            '0': '0',
+            0: '0',
             '1px': '1px',
-            '1': '0.25rem',
-            '2': '0.5rem',
-            '3': '0.75rem',
-            '4': '1rem',
-            '6': '1.5rem',
-            '8': '2rem',
-            '12': '3rem',
-            '14': '3.5rem',
-            '16': '4rem',
-            '20': '5rem',
-            '24': '6rem',
-            '32': '8rem',
-            '40': '10rem',
+            1: '0.25rem',
+            2: '0.5rem',
+            3: '0.75rem',
+            4: '1rem',
+            6: '1.5rem',
+            8: '2rem',
+            12: '3rem',
+            14: '3.5rem',
+            16: '4rem',
+            20: '5rem',
+            24: '6rem',
+            32: '8rem',
+            40: '10rem',
             auto: 'auto',
         },
         fontFamily: {
@@ -76,10 +69,10 @@ module.exports = {
             even: '#222B3C',
 
             gray: {
-                '100': '#E2E2E2',
-                '300': '#FFFFFFB3',
-                '500': '#FFFFFF80',
-                '700': '#FFFFFF4D',
+                100: '#E2E2E2',
+                300: '#FFFFFFB3',
+                500: '#FFFFFF80',
+                700: '#FFFFFF4D',
             },
 
             black: '#1A202C',
@@ -87,7 +80,7 @@ module.exports = {
             transparent: 'transparent',
         },
         borderRadius: {
-            default: '0.5rem',
+            DEFAULT: '0.5rem',
             lg: '1rem',
             xl: '2rem',
             full: '50%',

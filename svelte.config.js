@@ -6,5 +6,5 @@ const defaults = {
 }
 
 module.exports = {
-    preprocess: [ sveltePreprocess({ defaults, postcss }) ]
+    preprocess: [sveltePreprocess({ defaults, postcss })],
 }
