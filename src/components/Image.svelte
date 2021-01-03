@@ -8,6 +8,7 @@
     export { className as class }
 
     let className = ''
+    let loading = true
 
     const loaded = new Map()
     const TITLE_404 = 'Not found'
@@ -21,6 +22,7 @@
             node.setAttribute('src', data.src)
             node.setAttribute('title', title)
             node.setAttribute('alt', title)
+            loading = false
         }
     }
 
@@ -35,6 +37,7 @@
 <img
     alt
     loading="lazy"
+    class:loading
     class={className}
     on:click
     on:error={errorHandler}
@@ -44,6 +47,9 @@
 <style>
     img {
         @apply inline-block;
+    }
+
+    .loading {
         background-color: #f9f9f9;
         animation: loading 3s infinite;
     }
