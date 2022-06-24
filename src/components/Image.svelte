@@ -32,6 +32,7 @@
         this.alt = TITLE_404
         this.title = TITLE_404
     }
+
 </script>
 
 <img
@@ -67,4 +68,5 @@
             background-color: #9ca3af;
         }
     }
+
 </style>

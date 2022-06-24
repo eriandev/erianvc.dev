@@ -29,6 +29,7 @@
         allSections = document.querySelectorAll('section')
         allSections.forEach((section) => io.observe(section))
     })
+
 </script>
 
 <nav class:hidden={onviewSegment === 'hero'}>
@@ -103,4 +104,5 @@
     span {
         @apply w-full mt-2 text-sm uppercase font-fira lg:pb-1 lg:normal-case;
     }
+
 </style>

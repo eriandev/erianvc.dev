@@ -9,6 +9,7 @@
     let clickTap
 
     onMount(() => (clickTap = 'ontouchstart' in window ? 'Tap' : 'Click'))
+
 </script>
 
 <section id="contact">
@@ -48,4 +49,5 @@
     h4 {
         @apply mb-8;
     }
+
 </style>

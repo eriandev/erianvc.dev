@@ -10,6 +10,7 @@
 
     const posts = type === 'posts' ? true : false
     const projects = type === 'projects' ? true : false
+
 </script>
 
 <article class:projects class:posts>
@@ -96,4 +97,5 @@
             @apply justify-end pr-8;
         }
     }
+
 </style>

@@ -9,6 +9,7 @@
     let data
 
     onMount(async () => (data = await getFeaturedDataOf('posts')))
+
 </script>
 
 <section id="posts">
@@ -72,4 +73,5 @@
     .btn-desktop {
         @apply hidden xl:flex xl:justify-start xl:block;
     }
+
 </style>

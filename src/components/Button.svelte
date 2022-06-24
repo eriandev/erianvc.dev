@@ -15,6 +15,7 @@
 
     const scrollTo = () =>
         element ? animatedScroll({ element, duration }) : null
+
 </script>
 
 <button
@@ -32,4 +33,5 @@
     button {
         @apply focus:outline-none;
     }
+
 </style>

@@ -9,6 +9,7 @@
     let className = ''
 
     const card = true
+
 </script>
 
 <div class:card class={className}>
@@ -25,4 +26,5 @@
     h5 {
         @apply pl-1 mt-2 text-sm text-left text-gray-300 font-fira leading-title xl:text-base;
     }
+
 </style>

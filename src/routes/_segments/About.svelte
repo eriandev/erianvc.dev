@@ -5,6 +5,7 @@
     import Icon from '@components/Icon.svelte'
     import Link from '@components/Link.svelte'
     import Button from '@components/Button.svelte'
+
 </script>
 
 <section id="about">
@@ -99,4 +100,5 @@
     .action-button {
         @apply hidden w-full mb-16 sm:inline-block;
     }
+
 </style>

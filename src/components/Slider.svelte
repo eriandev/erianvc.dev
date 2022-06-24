@@ -14,6 +14,7 @@
         clicked = true
         imgClasses = 'rounded-lg sm:rounded-xl'
     }
+
 </script>
 
 <article class={className}>
@@ -112,4 +113,5 @@
             height: 300px;
         }
     }
+
 </style>

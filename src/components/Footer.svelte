@@ -1,6 +1,7 @@
 <script>
     import Link from '@components/Link.svelte'
     import Icon from '@components/Icon.svelte'
+
 </script>
 
 <footer>
@@ -35,4 +36,5 @@
     p {
         @apply pb-1;
     }
+
 </style>

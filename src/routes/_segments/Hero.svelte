@@ -3,6 +3,7 @@
     import Text from '@components/Text.svelte'
     import Image from '@components/Image.svelte'
     import Button from '@components/Button.svelte'
+
 </script>
 
 <section id="hero">
@@ -130,4 +131,5 @@
             transform: translateY(-120vh);
         }
     }
+
 </style>

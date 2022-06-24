@@ -4,6 +4,7 @@
     export { className as class }
 
     let className = ''
+
 </script>
 
 <p class:right class:left class={className}>
@@ -22,4 +23,5 @@
     .left {
         @apply xl:text-left;
     }
+
 </style>

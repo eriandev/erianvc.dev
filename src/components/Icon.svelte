@@ -29,6 +29,7 @@
         linkedin: Linkendin,
         'not-found': NotFound,
     }
+
 </script>
 
 <svelte:component
