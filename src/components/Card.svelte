@@ -1,30 +1,30 @@
 <script>
-    import Image from '@components/Image.svelte'
+  import Image from '@components/Image.svelte'
 
-    export let title
-    export { src as preview }
-    export { className as class }
+  export let title
+  export { src as preview }
+  export { className as class }
 
-    let src = ''
-    let className = ''
+  let src = ''
+  let className = ''
 
-    const card = true
+  const card = true
 
 </script>
 
-<div class:card class={className}>
-    <Image {src} {title} class="rounded" />
-    <h5>{title}</h5>
-</div>
-
 <style>
-    .card {
-        width: 300px;
-        height: auto;
-    }
+  .card {
+    width: 300px;
+    height: auto;
+  }
 
-    h5 {
-        @apply pl-1 mt-2 text-sm text-left text-gray-300 font-fira leading-title xl:text-base;
-    }
+  h5 {
+    @apply pl-1 mt-2 text-sm text-left text-gray-300 font-fira leading-title xl:text-base;
+  }
 
 </style>
+
+<div class:card class={className}>
+  <Image {src} {title} class="rounded" />
+  <h5>{title}</h5>
+</div>

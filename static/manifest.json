@@ -1,48 +1,48 @@
 {
-    "name": "Erick Vargas",
-    "short_name": "erianvc",
-    "description": "Developer passionate about programming and adoption of new technologies",
-    "background_color": "#222B3C",
-    "theme_color": "#02ABB1",
-    "display": "minimal-ui",
-    "start_url": "https://erianvc.dev/",
-    "icons": [
-        {
-            "src": "/icons/120x120.png",
-            "type": "image/png",
-            "sizes": "120x120"
-        },
-        {
-            "src": "/icons/144x144.png",
-            "type": "image/png",
-            "sizes": "144x144"
-        },
-        {
-            "src": "/icons/152x152.png",
-            "type": "image/png",
-            "sizes": "152x152"
-        },
-        {
-            "src": "/icons/180x180.png",
-            "type": "image/png",
-            "sizes": "180x180"
-        },
-        {
-            "src": "/icons/192x192.png",
-            "type": "image/png",
-            "sizes": "192x192"
-        },
-        {
-            "src": "/icons/512x512.png",
-            "type": "image/png",
-            "sizes": "512x512"
-        },
-        {
-            "src": "/icons/maskable_icon.png",
-            "sizes": "196x196",
-            "type": "image/png",
-            "purpose": "any maskable"
-        }
-    ],
-    "prefer_related_applications": false
+  "name": "Erick Vargas",
+  "short_name": "erianvc",
+  "description": "Developer passionate about programming and adoption of new technologies",
+  "background_color": "#222B3C",
+  "theme_color": "#02ABB1",
+  "display": "minimal-ui",
+  "start_url": "https://erianvc.dev/",
+  "icons": [
+    {
+      "src": "/icons/120x120.png",
+      "type": "image/png",
+      "sizes": "120x120"
+    },
+    {
+      "src": "/icons/144x144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "/icons/152x152.png",
+      "type": "image/png",
+      "sizes": "152x152"
+    },
+    {
+      "src": "/icons/180x180.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    },
+    {
+      "src": "/icons/192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/icons/512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "/icons/maskable_icon.png",
+      "sizes": "196x196",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "prefer_related_applications": false
 }

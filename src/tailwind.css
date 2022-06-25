@@ -3,85 +3,81 @@
 @tailwind utilities;
 
 :root {
-    font-size: 16px;
-    --color-prime: hsl(182, 98%, 35%);
-    --color-primary: hsl(182, 98%, 40%);
-    --color-secondary: hsl(170, 100%, 40%);
+  font-size: 16px;
+  --color-prime: hsl(182, 98%, 35%);
+  --color-primary: hsl(182, 98%, 40%);
+  --color-secondary: hsl(170, 100%, 40%);
 }
 
 body {
-    @apply relative min-h-screen text-gray-100 bg-even;
-    -webkit-tap-highlight-color: transparent;
+  @apply relative min-h-screen text-gray-100 bg-even;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body::-webkit-scrollbar {
-    width: 0.5rem;
+  width: 0.5rem;
 }
 
 body::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 8px rgba(0,0,0,0.3);
-    -webkit-box-shadow: inset 0 0 8px rgba(0,0,0,0.3);
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3);
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: var(--color-prime);
-    outline: 1px solid #2D3748;
+  background-color: var(--color-prime);
+  outline: 1px solid #2d3748;
 }
 
 ::selection {
-    @apply text-white bg-prime;
+  @apply text-white bg-prime;
 }
 
 ::-moz-selection {
-    @apply text-white bg-prime;
+  @apply text-white bg-prime;
 }
 
-
-
 .container {
-    @apply px-4 sm:px-0 sm:max-w-md md:max-w-2xl 2xl:max-w-3xl;
+  @apply px-4 sm:px-0 sm:max-w-md md:max-w-2xl 2xl:max-w-3xl;
 }
 
 .title {
-    @apply text-3xl font-bold text-center text-white font-dosis leading-title md:text-4xl;
+  @apply text-3xl font-bold text-center text-white font-dosis leading-title md:text-4xl;
 }
 
 .subtitle {
-    @apply tracking-widest text-center text-white font-dosis leading-title md:text-2xl;
+  @apply tracking-widest text-center text-white font-dosis leading-title md:text-2xl;
 }
 
 .emphasis {
-    @apply font-medium text-white md:text-xl leading-body font-fira;
+  @apply font-medium text-white md:text-xl leading-body font-fira;
 }
 
 .prime {
-    @apply text-4xl md:text-5xl;
+  @apply text-4xl md:text-5xl;
 }
 
-
-
 .btn {
-    @apply inline-block px-4 py-4 text-lg font-bold border rounded cursor-pointer select-none focus:outline-none border-prime;
-    transition: all 500ms ease-out;
+  @apply inline-block px-4 py-4 text-lg font-bold border rounded cursor-pointer select-none focus:outline-none border-prime;
+  transition: all 500ms ease-out;
 }
 
 .btn:active {
-    @apply transform scale-95;
-    transition: all 200ms ease-in-out;
+  @apply transform scale-95;
+  transition: all 200ms ease-in-out;
 }
 
 .outline {
-    @apply bg-transparent border text-secondary hover:text-white hover:bg-prime;
+  @apply bg-transparent border text-secondary hover:text-white hover:bg-prime;
 }
 
 .fill {
-    @apply text-white bg-prime hover:bg-primary;
+  @apply text-white bg-prime hover:bg-primary;
 }
 
 .small {
-    @apply px-2 py-2;
+  @apply px-2 py-2;
 }
 
 .featured {
-    @apply md:px-6 md:py-6; 
+  @apply md:px-6 md:py-6;
 }
