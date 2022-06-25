@@ -9,24 +9,7 @@
   let clickTap
 
   onMount(() => (clickTap = 'ontouchstart' in window ? 'Tap' : 'Click'))
-
 </script>
-
-<style>
-  section {
-    @apply flex flex-wrap content-center justify-center pt-12 pb-8 text-center bg-even;
-    height: calc(100vh - 5rem);
-  }
-
-  h3 {
-    @apply mb-6;
-  }
-
-  h4 {
-    @apply mb-8;
-  }
-
-</style>
 
 <section id="contact">
   <div class="container">
@@ -45,3 +28,18 @@
     <Slider class="mt-12 mb-16" bind:selected />
   </div>
 </section>
+
+<style>
+  section {
+    @apply flex flex-wrap content-center justify-center pt-12 pb-8 text-center bg-even;
+    height: calc(100vh - 5rem);
+  }
+
+  h3 {
+    @apply mb-6;
+  }
+
+  h4 {
+    @apply mb-8;
+  }
+</style>

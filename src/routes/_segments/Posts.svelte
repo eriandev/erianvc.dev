@@ -9,39 +9,7 @@
   let data
 
   onMount(async () => (data = await getFeaturedDataOf('posts')))
-
 </script>
-
-<style>
-  section {
-    @apply min-h-screen text-center bg-even;
-  }
-
-  .content {
-    @apply flex flex-wrap justify-center min-h-screen pt-12 pb-8 sm:content-center lg:pt-32 xl:flex-row-reverse xl:max-w-screen-xl xl:mx-auto;
-  }
-
-  article {
-    @apply xl:w-1/2 xl:pl-8;
-  }
-
-  h3 {
-    @apply mb-6 xl:text-left;
-  }
-
-  h4 {
-    @apply mb-8 xl:text-left;
-  }
-
-  .btn-mobile {
-    @apply hidden mb-16 md:block md:flex md:justify-center mt-14 xl:hidden;
-  }
-
-  .btn-desktop {
-    @apply hidden xl:flex xl:justify-start xl:block;
-  }
-
-</style>
 
 <section id="posts">
   <div class="content">
@@ -71,3 +39,33 @@
     </div>
   </div>
 </section>
+
+<style>
+  section {
+    @apply min-h-screen text-center bg-even;
+  }
+
+  .content {
+    @apply flex flex-wrap justify-center min-h-screen pt-12 pb-8 sm:content-center lg:pt-32 xl:flex-row-reverse xl:max-w-screen-xl xl:mx-auto;
+  }
+
+  article {
+    @apply xl:w-1/2 xl:pl-8;
+  }
+
+  h3 {
+    @apply mb-6 xl:text-left;
+  }
+
+  h4 {
+    @apply mb-8 xl:text-left;
+  }
+
+  .btn-mobile {
+    @apply hidden mb-16 md:block md:flex md:justify-center mt-14 xl:hidden;
+  }
+
+  .btn-desktop {
+    @apply hidden xl:flex xl:justify-start xl:block;
+  }
+</style>

@@ -4,8 +4,11 @@
   export { className as class }
 
   let className = ''
-
 </script>
+
+<p class:right class:left class={className}>
+  <slot />
+</p>
 
 <style>
   p {
@@ -19,9 +22,4 @@
   .left {
     @apply xl:text-left;
   }
-
 </style>
-
-<p class:right class:left class={className}>
-  <slot />
-</p>

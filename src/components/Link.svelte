@@ -11,7 +11,6 @@
 
   let href
   let className = ''
-
 </script>
 
 <a
@@ -24,6 +23,7 @@
   aria-label={label}
   rel={external ? 'external noopener noreferrer' : 'prefetch'}
   target={external ? '_blank' : null}
-  {href}>
+  {href}
+>
   <slot />
 </a>

@@ -3,8 +3,33 @@
   import Text from '@components/Text.svelte'
   import Image from '@components/Image.svelte'
   import Button from '@components/Button.svelte'
-
 </script>
+
+<section id="hero">
+  <div class="container">
+    <Image
+      class="mx-auto mb-4 rounded-full"
+      src="{BASE_URL}images/logo.svg"
+      width="10rem"
+      height="10rem"
+      title="Logo"
+    />
+
+    <h1 class="title prime">Erick Vargas</h1>
+    <h2 class="subtitle">Frontend Developer</h2>
+
+    <Text class="mb-4 sm:px-8 md:mb-8 2xl:px-16">
+      Focused on improving performance and the user experience in your web applications.
+    </Text>
+
+    <Button scrollTo="#projects" featured fill>See my projects</Button>
+  </div>
+  <ul class="circles">
+    {#each Array(10) as _unusedItem}
+      <li />
+    {/each}
+  </ul>
+</section>
 
 <style>
   section {
@@ -105,30 +130,4 @@
       transform: translateY(-120vh);
     }
   }
-
 </style>
-
-<section id="hero">
-  <div class="container">
-    <Image
-      class="mx-auto mb-4 rounded-full"
-      src="{BASE_URL}images/logo.svg"
-      width="10rem"
-      height="10rem"
-      title="Logo" />
-
-    <h1 class="title prime">Erick Vargas</h1>
-    <h2 class="subtitle">Frontend Developer</h2>
-
-    <Text class="mb-4 sm:px-8 md:mb-8 2xl:px-16">
-      Focused on improving performance and the user experience in your web applications.
-    </Text>
-
-    <Button scrollTo="#projects" featured fill>See my projects</Button>
-  </div>
-  <ul class="circles">
-    {#each Array(10) as _unusedItem}
-      <li />
-    {/each}
-  </ul>
-</section>

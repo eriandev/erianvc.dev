@@ -14,8 +14,33 @@
     clicked = true
     imgClasses = 'rounded-lg sm:rounded-xl'
   }
-
 </script>
+
+<article class={className}>
+  <input type="radio" name="slider" id="s2" bind:group={selected} value={2} />
+  <input type="radio" name="slider" id="s3" bind:group={selected} value={3} />
+  <input type="radio" name="slider" id="s1" bind:group={selected} value={1} />
+
+  <label for="s3" id="mail">
+    <Image src="{BASE_URL}images/qr-mail.svg" title="QR Mail" width="100%" height="100%" class={imgClasses} />
+  </label>
+  <label for="s1" id="linkedin">
+    <Image src="{BASE_URL}images/qr-linkedin.svg" title="QR Linkedin" width="100%" height="100%" class={imgClasses} />
+  </label>
+  <label for="s2" id="telegram" on:click|once={firstClick}>
+    {#if !clicked}
+      <Image src="{BASE_URL}images/logo.svg" title="Logo" width="12.5rem" height="12.5rem" class="rounded-full" />
+    {:else}
+      <Image
+        src="{BASE_URL}images/qr-telegram.svg"
+        title="QR Telegram"
+        width="100%"
+        height="100%"
+        class="rounded-lg sm:rounded-xl"
+      />
+    {/if}
+  </label>
+</article>
 
 <style>
   input {
@@ -70,30 +95,4 @@
       height: 300px;
     }
   }
-
 </style>
-
-<article class={className}>
-  <input type="radio" name="slider" id="s2" bind:group={selected} value={2} />
-  <input type="radio" name="slider" id="s3" bind:group={selected} value={3} />
-  <input type="radio" name="slider" id="s1" bind:group={selected} value={1} />
-
-  <label for="s3" id="mail">
-    <Image src="{BASE_URL}images/qr-mail.svg" title="QR Mail" width="100%" height="100%" class={imgClasses} />
-  </label>
-  <label for="s1" id="linkedin">
-    <Image src="{BASE_URL}images/qr-linkedin.svg" title="QR Linkedin" width="100%" height="100%" class={imgClasses} />
-  </label>
-  <label for="s2" id="telegram" on:click|once={firstClick}>
-    {#if !clicked}
-      <Image src="{BASE_URL}images/logo.svg" title="Logo" width="12.5rem" height="12.5rem" class="rounded-full" />
-    {:else}
-      <Image
-        src="{BASE_URL}images/qr-telegram.svg"
-        title="QR Telegram"
-        width="100%"
-        height="100%"
-        class="rounded-lg sm:rounded-xl" />
-    {/if}
-  </label>
-</article>

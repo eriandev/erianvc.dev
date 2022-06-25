@@ -24,39 +24,7 @@
     allSections = document.querySelectorAll('section')
     allSections.forEach((section) => io.observe(section))
   })
-
 </script>
-
-<style>
-  nav {
-    @apply fixed bottom-0 z-50 w-full h-20 bg-black lg:h-14 lg:top-0;
-  }
-
-  ul {
-    @apply grid h-full max-w-screen-sm grid-cols-4 grid-rows-1 mx-auto;
-  }
-
-  li {
-    @apply flex flex-wrap content-center justify-center text-center text-gray-500;
-  }
-
-  [aria-current],
-  li:hover {
-    @apply relative text-prime;
-  }
-
-  [aria-current]::after,
-  li:hover::after {
-    @apply absolute bottom-0 block h-1 bg-prime;
-    content: '';
-    width: 80%;
-  }
-
-  span {
-    @apply w-full mt-2 text-sm uppercase font-fira lg:pb-1 lg:normal-case;
-  }
-
-</style>
 
 <nav class:hidden={onviewSegment === 'hero'}>
   <ul>
@@ -89,3 +57,33 @@
     </li>
   </ul>
 </nav>
+
+<style>
+  nav {
+    @apply fixed bottom-0 z-50 w-full h-20 bg-black lg:h-14 lg:top-0;
+  }
+
+  ul {
+    @apply grid h-full max-w-screen-sm grid-cols-4 grid-rows-1 mx-auto;
+  }
+
+  li {
+    @apply flex flex-wrap content-center justify-center text-center text-gray-500;
+  }
+
+  [aria-current],
+  li:hover {
+    @apply relative text-prime;
+  }
+
+  [aria-current]::after,
+  li:hover::after {
+    @apply absolute bottom-0 block h-1 bg-prime;
+    content: '';
+    width: 80%;
+  }
+
+  span {
+    @apply w-full mt-2 text-sm uppercase font-fira lg:pb-1 lg:normal-case;
+  }
+</style>

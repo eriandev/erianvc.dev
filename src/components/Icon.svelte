@@ -29,7 +29,6 @@
     linkedin: Linkendin,
     'not-found': NotFound,
   }
-
 </script>
 
 <svelte:component
@@ -37,4 +36,5 @@
   class={className}
   width={size}
   height={size}
-  fill={color} />
+  fill={color}
+/>

@@ -10,8 +10,23 @@
 
   const posts = type === 'posts' ? true : false
   const projects = type === 'projects' ? true : false
-
 </script>
+
+<article class:projects class:posts>
+  {#each Array(4) as _unusedItem, position}
+    {#if data[position]}
+      <Link external to={data[position].link}>
+        <Card class="mr-6" title={data[position].title} preview={data[position].preview} />
+      </Link>
+    {/if}
+  {/each}
+
+  <Link external to={type === 'projects' ? SOCIALS.GITHUB : SOCIALS.DEVTO} class="md:hidden">
+    <Card class="mr-0" title="See more {type}" preview="{BASE_URL}images/see-more-{type}.webp" />
+  </Link>
+
+  <aside>x</aside>
+</article>
 
 <style>
   article {
@@ -72,21 +87,4 @@
       @apply justify-end pr-8;
     }
   }
-
 </style>
-
-<article class:projects class:posts>
-  {#each Array(4) as _unusedItem, position}
-    {#if data[position]}
-      <Link external to={data[position].link}>
-        <Card class="mr-6" title={data[position].title} preview={data[position].preview} />
-      </Link>
-    {/if}
-  {/each}
-
-  <Link external to={type === 'projects' ? SOCIALS.GITHUB : SOCIALS.DEVTO} class="md:hidden">
-    <Card class="mr-0" title="See more {type}" preview="{BASE_URL}images/see-more-{type}.webp" />
-  </Link>
-
-  <aside>x</aside>
-</article>

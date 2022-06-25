@@ -32,8 +32,18 @@
     this.alt = TITLE_404
     this.title = TITLE_404
   }
-
 </script>
+
+<img
+  alt
+  loading="lazy"
+  class:loading
+  class={className}
+  on:click
+  on:error={errorHandler}
+  use:lazy={{ src: src ? src : IMG_404 }}
+  style="width: {width}; height: {height};"
+/>
 
 <style>
   img {
@@ -58,15 +68,4 @@
       background-color: #9ca3af;
     }
   }
-
 </style>
-
-<img
-  alt
-  loading="lazy"
-  class:loading
-  class={className}
-  on:click
-  on:error={errorHandler}
-  use:lazy={{ src: src ? src : IMG_404 }}
-  style="width: {width}; height: {height};" />

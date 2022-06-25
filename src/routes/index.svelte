@@ -4,7 +4,6 @@
   import Posts from './_segments/Posts.svelte'
   import About from './_segments/About.svelte'
   import Contact from './_segments/Contact.svelte'
-
 </script>
 
 <Hero />

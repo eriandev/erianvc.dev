@@ -13,8 +13,36 @@
 
   const dev = process.env.NODE_ENV === 'development'
   const toggleVisibility = () => (showModal = !showModal)
-
 </script>
+
+<svelte:head>
+  <title>Error {status}</title>
+</svelte:head>
+
+<section>
+  <h1>{status}</h1>
+  <h2>- {ERROR_MSG[status]} -</h2>
+
+  <p class="message">The page you are looking for doesn't exist or an other error ocurred</p>
+
+  <div>
+    <Link to="/" btn small fill>Go to home</Link>
+  </div>
+
+  {#if dev && error.stack}
+    <button on:click={toggleVisibility}> More info </button>
+
+    {#if showModal}
+      <div class="error-info">
+        <div class="error-stack">
+          <span>{error.message}</span>
+          <p class="message-stack">{error.stack}</p>
+          <button class="w-full" on:click={toggleVisibility}> Close </button>
+        </div>
+      </div>
+    {/if}
+  {/if}
+</section>
 
 <style>
   section {
@@ -58,34 +86,4 @@
   .message-stack {
     @apply px-4;
   }
-
 </style>
-
-<svelte:head>
-  <title>Error {status}</title>
-</svelte:head>
-
-<section>
-  <h1>{status}</h1>
-  <h2>- {ERROR_MSG[status]} -</h2>
-
-  <p class="message">The page you are looking for doesn't exist or an other error ocurred</p>
-
-  <div>
-    <Link to="/" btn small fill>Go to home</Link>
-  </div>
-
-  {#if dev && error.stack}
-    <button on:click={toggleVisibility}> More info </button>
-
-    {#if showModal}
-      <div class="error-info">
-        <div class="error-stack">
-          <span>{error.message}</span>
-          <p class="message-stack">{error.stack}</p>
-          <button class="w-full" on:click={toggleVisibility}> Close </button>
-        </div>
-      </div>
-    {/if}
-  {/if}
-</section>
