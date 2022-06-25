@@ -31,7 +31,7 @@
 
 <style>
   section {
-    @apply flex flex-wrap content-center justify-center pt-12 pb-8 text-center bg-even;
+    @apply flex flex-wrap content-center justify-center bg-even pt-12 pb-8 text-center;
     height: calc(100vh - 5rem);
   }
 

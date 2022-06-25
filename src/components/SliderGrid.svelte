@@ -30,7 +30,7 @@
 
 <style>
   article {
-    @apply flex justify-between px-4 pb-2 overflow-y-hidden text-center flex-nowrap;
+    @apply flex flex-nowrap justify-between overflow-y-hidden px-4 pb-2 text-center;
   }
 
   article::-webkit-scrollbar {
@@ -48,7 +48,7 @@
   }
 
   aside {
-    @apply flex-none invisible;
+    @apply invisible flex-none;
     margin-left: 10px;
   }
 
@@ -64,7 +64,7 @@
 
   @screen md {
     article {
-      @apply grid justify-center w-full gap-12 px-16 overflow-auto;
+      @apply grid w-full justify-center gap-12 overflow-auto px-16;
       grid-template-columns: 300px 300px;
       grid-template-rows: 200px 200px;
     }
@@ -76,7 +76,7 @@
 
   @screen xl {
     article {
-      @apply w-1/2 px-0 mx-0;
+      @apply mx-0 w-1/2 px-0;
     }
 
     .projects {

@@ -46,16 +46,16 @@
 
 <style>
   section {
-    @apply flex flex-wrap content-center justify-center min-h-screen text-center;
+    @apply flex min-h-screen flex-wrap content-center justify-center text-center;
   }
 
   h1 {
-    @apply w-full font-bold text-prime text-9xl font-dosis lg:text-hero;
+    @apply w-full font-dosis text-9xl font-bold text-prime lg:text-hero;
     line-height: 1;
   }
 
   h2 {
-    @apply w-full text-2xl font-fira;
+    @apply w-full font-fira text-2xl;
   }
 
   .message {
@@ -67,16 +67,16 @@
   }
 
   button {
-    @apply my-3 outline-none text-primary;
+    @apply outline-none my-3 text-primary;
   }
 
   .error-info {
-    @apply fixed top-0 left-0 z-20 flex flex-wrap content-center justify-center w-screen min-h-screen;
+    @apply fixed top-0 left-0 z-20 flex min-h-screen w-screen flex-wrap content-center justify-center;
     background-color: rgba(0, 0, 0, 0.4);
   }
 
   .error-stack {
-    @apply flex flex-wrap justify-center max-w-xs rounded-lg sm:max-w-sm lg:max-w-lg bg-even 2xl:max-w-2xl;
+    @apply flex max-w-xs flex-wrap justify-center rounded-lg bg-even sm:max-w-sm lg:max-w-lg 2xl:max-w-2xl;
   }
 
   span {

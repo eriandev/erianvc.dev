@@ -23,6 +23,6 @@
   }
 
   h5 {
-    @apply pl-1 mt-2 text-sm text-left text-gray-300 font-fira leading-title xl:text-base;
+    @apply mt-2 pl-1 text-left font-fira text-sm leading-title text-gray-300 xl:text-base;
   }
 </style>

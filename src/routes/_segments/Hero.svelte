@@ -33,7 +33,7 @@
 
 <style>
   section {
-    @apply relative grid min-h-screen pt-8 text-center place-items-center;
+    @apply relative grid min-h-screen place-items-center pt-8 text-center;
   }
 
   h1 {
@@ -45,73 +45,73 @@
   }
 
   .circles {
-    @apply absolute bottom-0 left-0 z-0 w-full h-full overflow-hidden;
+    @apply absolute bottom-0 left-0 z-0 h-full w-full overflow-hidden;
     max-width: 100vw;
     z-index: -1;
   }
 
   .circles li {
-    @apply absolute block w-6 h-6 bg-white;
+    @apply absolute block h-6 w-6 bg-white;
     animation: animate 25s linear infinite;
     bottom: calc(-150px - 40vh);
   }
 
   .circles li:nth-child(1) {
-    @apply w-20 h-20 rounded-full bg-prime;
+    @apply h-20 w-20 rounded-full bg-prime;
     left: 25%;
     animation-duration: 20s;
   }
 
   .circles li:nth-child(2) {
-    @apply w-6 h-6 bg-white rounded-full;
+    @apply h-6 w-6 rounded-full bg-white;
     left: 10%;
     animation-duration: 25s;
   }
 
   .circles li:nth-child(3) {
-    @apply w-6 h-6 rounded-full bg-prime;
+    @apply h-6 w-6 rounded-full bg-prime;
     left: 70%;
     animation-duration: 30s;
   }
 
   .circles li:nth-child(4) {
-    @apply rounded-full w-14 h-14 bg-secondary;
+    @apply h-14 w-14 rounded-full bg-secondary;
     left: 40%;
     animation-duration: 15s;
   }
 
   .circles li:nth-child(5) {
-    @apply w-6 h-6 bg-white rounded-full;
+    @apply h-6 w-6 rounded-full bg-white;
     left: 65%;
     animation-duration: 20s;
   }
 
   .circles li:nth-child(6) {
-    @apply w-24 h-24 rounded-full bg-secondary;
+    @apply h-24 w-24 rounded-full bg-secondary;
     left: 75%;
     animation-duration: 25s;
   }
 
   .circles li:nth-child(7) {
-    @apply w-12 h-12 rounded-full bg-prime;
+    @apply h-12 w-12 rounded-full bg-prime;
     left: 35%;
     animation-duration: 30s;
   }
 
   .circles li:nth-child(8) {
-    @apply w-6 h-6 rounded-full bg-secondary;
+    @apply h-6 w-6 rounded-full bg-secondary;
     left: 50%;
     animation-duration: 35s;
   }
 
   .circles li:nth-child(9) {
-    @apply w-4 h-4 rounded-full bg-prime;
+    @apply h-4 w-4 rounded-full bg-prime;
     left: 20%;
     animation-duration: 40s;
   }
 
   .circles li:nth-child(10) {
-    @apply w-12 h-12 bg-white rounded-full;
+    @apply h-12 w-12 rounded-full bg-white;
     left: 85%;
     animation-duration: 45s;
   }

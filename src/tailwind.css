@@ -10,7 +10,7 @@
 }
 
 body {
-  @apply relative min-h-screen text-gray-100 bg-even;
+  @apply relative min-h-screen bg-even text-gray-100;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -29,27 +29,27 @@ body::-webkit-scrollbar-thumb {
 }
 
 ::selection {
-  @apply text-white bg-prime;
+  @apply bg-prime text-white;
 }
 
 ::-moz-selection {
-  @apply text-white bg-prime;
+  @apply bg-prime text-white;
 }
 
 .container {
-  @apply px-4 sm:px-0 sm:max-w-md md:max-w-2xl 2xl:max-w-3xl;
+  @apply px-4 sm:max-w-md sm:px-0 md:max-w-2xl 2xl:max-w-3xl;
 }
 
 .title {
-  @apply text-3xl font-bold text-center text-white font-dosis leading-title md:text-4xl;
+  @apply text-center font-dosis text-3xl font-bold leading-title text-white md:text-4xl;
 }
 
 .subtitle {
-  @apply tracking-widest text-center text-white font-dosis leading-title md:text-2xl;
+  @apply text-center font-dosis leading-title tracking-widest text-white md:text-2xl;
 }
 
 .emphasis {
-  @apply font-medium text-white md:text-xl leading-body font-fira;
+  @apply font-fira font-medium leading-body text-white md:text-xl;
 }
 
 .prime {
@@ -57,21 +57,21 @@ body::-webkit-scrollbar-thumb {
 }
 
 .btn {
-  @apply inline-block px-4 py-4 text-lg font-bold border rounded cursor-pointer select-none focus:outline-none border-prime;
+  @apply focus:outline-none inline-block cursor-pointer select-none rounded border border-prime px-4 py-4 text-lg font-bold;
   transition: all 500ms ease-out;
 }
 
 .btn:active {
-  @apply transform scale-95;
+  @apply scale-95 transform;
   transition: all 200ms ease-in-out;
 }
 
 .outline {
-  @apply bg-transparent border text-secondary hover:text-white hover:bg-prime;
+  @apply border bg-transparent text-secondary hover:bg-prime hover:text-white;
 }
 
 .fill {
-  @apply text-white bg-prime hover:bg-primary;
+  @apply bg-prime text-white hover:bg-primary;
 }
 
 .small {

@@ -10,23 +10,23 @@
       <Link
         external
         to="https://www.linkedin.com/in/juancarlos-cruz"
-        class="border-b-2 border-prime text-prime font-fira hover:text-primary"
+        class="border-b-2 border-prime font-fira text-prime hover:text-primary"
       >
         Juan Carlos Cruz
       </Link>
     </p>
     <p>
       Developed with
-      <Icon class="inline mb-1" name="love" size="16" />
+      <Icon class="mb-1 inline" name="love" size="16" />
       and
-      <Icon class="inline mb-1" name="sapper" size="16" />
+      <Icon class="mb-1 inline" name="sapper" size="16" />
     </p>
   </div>
 </footer>
 
 <style>
   footer {
-    @apply flex justify-center w-full h-20 mb-20 text-center bg-black font-fira lg:mb-0;
+    @apply mb-20 flex h-20 w-full justify-center bg-black text-center font-fira lg:mb-0;
   }
 
   .content {

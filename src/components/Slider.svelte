@@ -55,7 +55,7 @@
   }
 
   label {
-    @apply absolute left-0 right-0 flex flex-wrap content-center justify-center m-auto rounded-lg cursor-pointer select-none bg-even;
+    @apply absolute left-0 right-0 m-auto flex cursor-pointer select-none flex-wrap content-center justify-center rounded-lg bg-even;
     width: 200px;
     height: 200px;
     transition: all 0.8s ease;

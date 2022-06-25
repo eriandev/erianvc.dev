@@ -12,7 +12,7 @@
 
 <style>
   p {
-    @apply text-center text-gray-100 font-fira leading-body md:text-2xl;
+    @apply text-center font-fira leading-body text-gray-100 md:text-2xl;
   }
 
   .right {

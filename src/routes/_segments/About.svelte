@@ -17,12 +17,12 @@
         width="100%"
         height="100%"
         title="Erick Vargas photo"
-        class="border-4 rounded-full border-prime"
+        class="rounded-full border-4 border-prime"
       />
     </div>
 
     <div class="socials">
-      <div class="flex w-full mb-2">
+      <div class="mb-2 flex w-full">
         <Text left class="inline">Lima, Peru</Text>
       </div>
 
@@ -65,7 +65,7 @@
 
 <style>
   section {
-    @apply flex flex-wrap content-center justify-center min-h-screen pt-12 pb-8 text-center bg-odd lg:pt-32;
+    @apply flex min-h-screen flex-wrap content-center justify-center bg-odd pt-12 pb-8 text-center lg:pt-32;
   }
 
   h3 {
@@ -73,30 +73,30 @@
   }
 
   .look-at-me {
-    @apply grid content-center w-full grid-cols-2 grid-rows-1 mb-12;
+    @apply mb-12 grid w-full grid-cols-2 grid-rows-1 content-center;
   }
 
   .img-container {
-    @apply w-24 mr-4 md:w-40 justify-self-end;
+    @apply mr-4 w-24 justify-self-end md:w-40;
   }
 
   .socials {
-    @apply flex flex-wrap content-center pl-4 justify-self-start;
+    @apply flex flex-wrap content-center justify-self-start pl-4;
   }
 
   .description {
-    @apply justify-center w-full mb-12;
+    @apply mb-12 w-full justify-center;
   }
 
   ul {
-    @apply flex flex-wrap justify-start w-full;
+    @apply flex w-full flex-wrap justify-start;
   }
 
   li {
-    @apply inline mr-4;
+    @apply mr-4 inline;
   }
 
   .action-button {
-    @apply hidden w-full mb-16 sm:inline-block;
+    @apply mb-16 hidden w-full sm:inline-block;
   }
 </style>

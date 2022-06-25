@@ -42,11 +42,11 @@
 
 <style>
   section {
-    @apply min-h-screen text-center bg-even;
+    @apply min-h-screen bg-even text-center;
   }
 
   .content {
-    @apply flex flex-wrap justify-center min-h-screen pt-12 pb-8 sm:content-center lg:pt-32 xl:flex-row-reverse xl:max-w-screen-xl xl:mx-auto;
+    @apply flex min-h-screen flex-wrap justify-center pt-12 pb-8 sm:content-center lg:pt-32 xl:mx-auto xl:max-w-screen-xl xl:flex-row-reverse;
   }
 
   article {
@@ -62,10 +62,10 @@
   }
 
   .btn-mobile {
-    @apply hidden mb-16 md:block md:flex md:justify-center mt-14 xl:hidden;
+    @apply mb-16 mt-14 hidden md:block md:flex md:justify-center xl:hidden;
   }
 
   .btn-desktop {
-    @apply hidden xl:flex xl:justify-start xl:block;
+    @apply hidden xl:block xl:flex xl:justify-start;
   }
 </style>

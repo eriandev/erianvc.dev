@@ -29,28 +29,28 @@
 <nav class:hidden={onviewSegment === 'hero'}>
   <ul>
     <li aria-current={onviewSegment === 'projects' ? 'page' : null}>
-      <Button scrollTo="#projects" class="flex flex-wrap content-center justify-center w-full h-full" btn={false}>
+      <Button scrollTo="#projects" class="flex h-full w-full flex-wrap content-center justify-center" btn={false}>
         <Icon name="projects" class="fill-current lg:hidden" />
         <span>Projects</span>
       </Button>
     </li>
 
     <li aria-current={onviewSegment === 'posts' ? 'page' : null}>
-      <Button scrollTo="#posts" class="flex flex-wrap content-center justify-center w-full h-full" btn={false}>
+      <Button scrollTo="#posts" class="flex h-full w-full flex-wrap content-center justify-center" btn={false}>
         <Icon name="posts" class="fill-current lg:hidden" />
         <span>Posts</span>
       </Button>
     </li>
 
     <li aria-current={onviewSegment === 'about' ? 'page' : null}>
-      <Button scrollTo="#about" class="flex flex-wrap content-center justify-center w-full h-full" btn={false}>
+      <Button scrollTo="#about" class="flex h-full w-full flex-wrap content-center justify-center" btn={false}>
         <Icon name="about" class="fill-current lg:hidden" />
         <span>About</span>
       </Button>
     </li>
 
     <li aria-current={onviewSegment === 'contact' ? 'page' : null}>
-      <Button scrollTo="#contact" class="flex flex-wrap content-center justify-center w-full h-full" btn={false}>
+      <Button scrollTo="#contact" class="flex h-full w-full flex-wrap content-center justify-center" btn={false}>
         <Icon name="contact" class="fill-current lg:hidden" />
         <span>Contact</span>
       </Button>
@@ -60,11 +60,11 @@
 
 <style>
   nav {
-    @apply fixed bottom-0 z-50 w-full h-20 bg-black lg:h-14 lg:top-0;
+    @apply fixed bottom-0 z-50 h-20 w-full bg-black lg:top-0 lg:h-14;
   }
 
   ul {
-    @apply grid h-full max-w-screen-sm grid-cols-4 grid-rows-1 mx-auto;
+    @apply mx-auto grid h-full max-w-screen-sm grid-cols-4 grid-rows-1;
   }
 
   li {
@@ -84,6 +84,6 @@
   }
 
   span {
-    @apply w-full mt-2 text-sm uppercase font-fira lg:pb-1 lg:normal-case;
+    @apply mt-2 w-full font-fira text-sm uppercase lg:pb-1 lg:normal-case;
   }
 </style>
