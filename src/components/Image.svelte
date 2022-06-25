@@ -47,7 +47,7 @@
 
 <style>
   img {
-    @apply inline-block;
+    @apply inline-block object-cover;
   }
 
   .loading {

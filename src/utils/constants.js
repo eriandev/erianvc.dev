@@ -5,19 +5,19 @@ const dev = process.env.NODE_ENV === 'development'
 export const BASE_URL = !dev ? PROD_URL : DEV_URL
 
 export const SOCIALS = {
-  DEVTO: 'https://dev.to/erianvc',
-  GITHUB: 'https://github.com/erianvc',
-  TWITTER: 'https://twitter.com/erianvc',
-  LINKEDIN: 'https://www.linkedin.com/in/erianvc',
+  DEVTO: 'https://dev.to/eriandev',
+  GITHUB: 'https://github.com/eriandev',
+  TWITTER: 'https://twitter.com/eriandev',
+  LINKEDIN: 'https://www.linkedin.com/in/eriandev',
 }
 
 export const QR_DATA = [
   {
-    link: 'https://www.linkedin.com/in/erianvc/',
+    link: 'https://www.linkedin.com/in/eriandev/',
     msg: 'More about me on Linkedin',
   },
   {
-    link: 'https://t.me/erianvc/',
+    link: 'https://t.me/eriandev/',
     msg: "Let's talk throught Telegram!",
   },
   {
