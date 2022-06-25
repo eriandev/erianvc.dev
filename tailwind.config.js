@@ -1,7 +1,7 @@
 const { fontFamily } = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  purge: ['./**/*.html', './**/*.svelte'],
+  content: ['./**/*.{svelte,html,css}'],
   corePlugins: {
     container: false,
   },
@@ -85,6 +85,11 @@ module.exports = {
       xl: '2rem',
       full: '50%',
     },
+    extend: {
+      transitionProperty: {
+        'transform-bgColor': 'transform, background-color, color'
+      }
+    }
   },
   variants: {},
   plugins: [],

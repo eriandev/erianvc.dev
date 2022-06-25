@@ -51,8 +51,7 @@
   }
 
   .loading {
-    background-color: #f9f9f9;
-    animation: loading 3s infinite;
+    @apply animate-[loading_3s_infinite] bg-[#f9f9f9];
   }
 
   @keyframes loading {

@@ -57,13 +57,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 .btn {
-  @apply focus:outline-none inline-block cursor-pointer select-none rounded border border-prime px-4 py-4 text-lg font-bold;
-  transition: all 500ms ease-out;
+  @apply inline-block cursor-pointer select-none rounded border border-prime px-4 py-4 text-lg font-bold outline-none focus:outline-none;
+  @apply transition-transform-bgColor duration-500 ease-out;
 }
 
 .btn:active {
-  @apply scale-95 transform;
-  transition: all 200ms ease-in-out;
+  @apply scale-95 transform transition-transform-bgColor duration-200 ease-in-out;
 }
 
 .outline {

@@ -67,7 +67,7 @@
   }
 
   button {
-    @apply outline-none my-3 text-primary;
+    @apply my-3 text-primary outline-none;
   }
 
   .error-info {

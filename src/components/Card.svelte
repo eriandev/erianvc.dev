@@ -18,8 +18,7 @@
 
 <style>
   .card {
-    width: 300px;
-    height: auto;
+    @apply h-auto w-[300px];
   }
 
   h5 {
