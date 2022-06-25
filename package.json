@@ -1,17 +1,13 @@
 {
   "name": "erianvc.dev",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "description": "Portfolio web",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/erianvc/erianvc.dev.git"
   },
-  "author": "Erick Vargas <erianvc.dev@gmail.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/erianvc/erianvc.dev/issues"
-  },
-  "homepage": "https://github.com/erianvc/erianvc.dev#readme",
   "scripts": {
     "start": "node __sapper__/build",
     "dev": "run-p css:watch sapper:dev",
