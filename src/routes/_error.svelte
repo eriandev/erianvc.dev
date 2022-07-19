@@ -44,7 +44,7 @@
   {/if}
 </section>
 
-<style>
+<style lang="postcss">
   section {
     @apply flex min-h-screen flex-wrap content-center justify-center text-center;
   }

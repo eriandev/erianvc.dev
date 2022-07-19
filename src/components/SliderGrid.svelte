@@ -28,7 +28,7 @@
   <aside>x</aside>
 </article>
 
-<style>
+<style lang="postcss">
   article {
     @apply flex flex-nowrap justify-between overflow-y-hidden px-4 pb-2 text-center;
   }

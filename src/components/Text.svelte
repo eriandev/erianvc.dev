@@ -10,7 +10,7 @@
   <slot />
 </p>
 
-<style>
+<style lang="postcss">
   p {
     @apply text-center font-fira leading-body text-gray-100 md:text-2xl;
   }

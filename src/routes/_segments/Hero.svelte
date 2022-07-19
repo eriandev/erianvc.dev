@@ -31,7 +31,7 @@
   </ul>
 </section>
 
-<style>
+<style lang="postcss">
   section {
     @apply relative grid min-h-screen place-items-center pt-8 text-center;
   }

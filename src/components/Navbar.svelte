@@ -58,7 +58,7 @@
   </ul>
 </nav>
 
-<style>
+<style lang="postcss">
   nav {
     @apply fixed bottom-0 z-50 h-20 w-full bg-black lg:top-0 lg:h-14;
   }

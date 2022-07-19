@@ -42,7 +42,7 @@
   </label>
 </article>
 
-<style>
+<style lang="postcss">
   input {
     @apply hidden;
   }

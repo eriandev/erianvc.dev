@@ -45,7 +45,7 @@
   style="width: {width}; height: {height};"
 />
 
-<style>
+<style lang="postcss">
   img {
     @apply inline-block object-cover;
   }

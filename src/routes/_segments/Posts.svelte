@@ -40,7 +40,7 @@
   </div>
 </section>
 
-<style>
+<style lang="postcss">
   section {
     @apply min-h-screen bg-even text-center;
   }
@@ -62,10 +62,10 @@
   }
 
   .btn-mobile {
-    @apply mb-16 mt-14 hidden md:block md:flex md:justify-center xl:hidden;
+    @apply mb-16 mt-14 hidden md:flex md:justify-center xl:hidden;
   }
 
   .btn-desktop {
-    @apply hidden xl:block xl:flex xl:justify-start;
+    @apply hidden xl:flex xl:justify-start;
   }
 </style>

@@ -20,7 +20,7 @@
   <slot />
 </button>
 
-<style>
+<style lang="postcss">
   button {
     @apply focus:outline-none;
   }

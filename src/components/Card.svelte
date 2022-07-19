@@ -16,7 +16,7 @@
   <h5>{title}</h5>
 </div>
 
-<style>
+<style lang="postcss">
   .card {
     @apply h-auto w-[300px];
   }

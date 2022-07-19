@@ -24,7 +24,7 @@
   </div>
 </footer>
 
-<style>
+<style lang="postcss">
   footer {
     @apply mb-20 flex h-20 w-full justify-center bg-black text-center font-fira lg:mb-0;
   }

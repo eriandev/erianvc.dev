@@ -40,13 +40,13 @@
   </div>
 </section>
 
-<style>
+<style lang="postcss">
   section {
     @apply min-h-screen bg-odd text-center;
   }
 
   .content {
-    @apply flex min-h-screen flex-wrap justify-center pt-8 pt-12 sm:content-center lg:pt-32 xl:mx-auto xl:max-w-screen-xl;
+    @apply flex min-h-screen flex-wrap justify-center pt-12 sm:content-center lg:pt-32 xl:mx-auto xl:max-w-screen-xl;
   }
 
   article {
@@ -62,10 +62,10 @@
   }
 
   .btn-mobile {
-    @apply mb-16 mt-14 hidden md:block md:flex md:justify-center xl:hidden;
+    @apply mb-16 mt-14 hidden md:flex md:justify-center xl:hidden;
   }
 
   .btn-desktop {
-    @apply hidden xl:block xl:flex xl:justify-end;
+    @apply hidden xl:flex xl:justify-end;
   }
 </style>

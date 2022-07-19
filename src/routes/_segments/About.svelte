@@ -63,7 +63,7 @@
   </div>
 </section>
 
-<style>
+<style lang="postcss">
   section {
     @apply flex min-h-screen flex-wrap content-center justify-center bg-odd pt-12 pb-8 text-center lg:pt-32;
   }
