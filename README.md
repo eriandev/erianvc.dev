@@ -1,5 +1,5 @@
 <div align="center">
-  <a target="_blank" href="https://erianvc.dev/">
+  <a target="_blank" href="https://erian.dev/">
     <img height="128" width="128" title="Logo" alt="Logo" src="https://raw.githubusercontent.com/eriandev/erianvc/main/logo/adaptive.svg" />
   </a>
 </div>
